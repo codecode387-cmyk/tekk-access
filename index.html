@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>TEKK ACCESS — Solar, Inverter, Home Automation & CCTV Installation</title>
 <meta name="description" content="TEKK ACCESS offers solar installation, inverter installation, home automation, CCTV installation and electrical services. Enquire via WhatsApp for a consultation and quote.">
 <meta name="keywords" content="TEKK ACCESS, solar installation, inverter installation, home automation services, CCTV installation services, electrical services, solar and inverter solutions">
@@ -41,39 +41,42 @@
     --max:1200px;
     --transition:.3s ease;
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth;scroll-padding-top:80px;overflow-x:hidden;-webkit-text-size-adjust:100%}
   body{
     font-family:'Inter',system-ui,-apple-system,sans-serif;
     color:var(--charcoal);background:var(--white);line-height:1.65;
-    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;width:100%;
   }
-  img{max-width:100%;display:block}
+  img{max-width:100%;display:block;height:auto}
   a{text-decoration:none;color:inherit}
   ul{list-style:none}
-  .container{width:min(var(--max),92%);margin-inline:auto}
-  h1,h2,h3,h4{color:var(--navy);line-height:1.18;font-weight:800;letter-spacing:-.02em}
-  h1{font-size:clamp(2.2rem,5.4vw,3.8rem)}
-  h2{font-size:clamp(1.75rem,3.7vw,2.6rem)}
-  h3{font-size:1.2rem;font-weight:700}
-  p{color:var(--charcoal)}
+  .container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+  h1,h2,h3,h4{color:var(--navy);line-height:1.18;font-weight:800;letter-spacing:-.02em;word-wrap:break-word;overflow-wrap:break-word}
+  h1{font-size:clamp(1.75rem,5.4vw,3.6rem)}
+  h2{font-size:clamp(1.45rem,3.7vw,2.5rem)}
+  h3{font-size:1.15rem;font-weight:700}
+  p{color:var(--charcoal);word-wrap:break-word;overflow-wrap:break-word}
   .eyebrow{
-    display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:700;
-    letter-spacing:.16em;text-transform:uppercase;color:var(--electric);margin-bottom:.75rem;
+    display:inline-flex;align-items:center;gap:.5rem;font-size:.72rem;font-weight:700;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--electric);margin-bottom:.75rem;
+    flex-wrap:wrap;
   }
-  .eyebrow::before{content:'';width:22px;height:2px;background:var(--gold);border-radius:2px}
-  .section{padding:clamp(3.5rem,7vw,5.5rem) 0}
-  .section-head{max-width:720px;margin-bottom:2.8rem}
+  .eyebrow::before{content:'';width:20px;height:2px;background:var(--gold);border-radius:2px;flex-shrink:0}
+  .section{padding:clamp(2.75rem,6vw,5rem) 0}
+  .section-head{max-width:720px;margin-bottom:2.2rem}
   .section-head.center{margin-inline:auto;text-align:center}
   .section-head.center .eyebrow::before{display:none}
-  .section-head p{margin-top:.9rem;color:var(--grey);font-size:1.03rem}
+  .section-head p{margin-top:.85rem;color:var(--grey);font-size:clamp(.92rem,2.4vw,1rem)}
 
   /* Buttons */
   .btn{
     display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
-    padding:.92rem 1.65rem;border-radius:11px;font-weight:700;font-size:.94rem;
+    padding:.9rem 1.5rem;border-radius:11px;font-weight:700;font-size:.92rem;
     border:2px solid transparent;cursor:pointer;transition:var(--transition);
-    min-height:48px;text-align:center;font-family:inherit;white-space:nowrap;
+    min-height:48px;text-align:center;font-family:inherit;
+    white-space:normal;line-height:1.3;max-width:100%;
+    word-wrap:break-word;overflow-wrap:break-word;
   }
   .btn svg{flex-shrink:0}
   .btn-primary{background:var(--gold);color:var(--navy);box-shadow:0 8px 22px rgba(245,181,0,.35)}
@@ -93,22 +96,23 @@
     backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s;
   }
   .site-header.scrolled{box-shadow:0 4px 22px rgba(10,22,51,.08)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:1rem}
-  .logo{display:flex;align-items:center;gap:.65rem;font-weight:900;font-size:1.14rem;color:var(--navy);letter-spacing:.02em;flex-shrink:0}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px;gap:.75rem}
+  .logo{display:flex;align-items:center;gap:.55rem;font-weight:900;font-size:1.02rem;color:var(--navy);letter-spacing:.02em;flex-shrink:1;min-width:0}
   .logo-mark{
-    width:42px;height:42px;border-radius:11px;
+    width:38px;height:38px;border-radius:10px;
     background:linear-gradient(135deg,var(--electric),var(--navy));
-    display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:1rem;flex-shrink:0;
+    display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:.92rem;flex-shrink:0;
     box-shadow:0 4px 14px rgba(37,99,235,.3);
   }
-  .logo span small{display:block;font-size:.6rem;font-weight:600;letter-spacing:.14em;color:var(--grey);text-transform:uppercase;line-height:1.3}
-  .nav-links{display:flex;align-items:center;gap:1.35rem}
-  .nav-links a{font-size:.85rem;font-weight:600;color:var(--navy-2);position:relative;padding:.4rem 0;transition:color .2s;white-space:nowrap}
+  .logo span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+  .logo span small{display:block;font-size:.55rem;font-weight:600;letter-spacing:.12em;color:var(--grey);text-transform:uppercase;line-height:1.3}
+  .nav-links{display:flex;align-items:center;gap:1.25rem}
+  .nav-links a{font-size:.83rem;font-weight:600;color:var(--navy-2);position:relative;padding:.4rem 0;transition:color .2s;white-space:nowrap}
   .nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
   .nav-links a:hover{color:var(--electric)}
   .nav-links a:hover::after{width:100%}
-  .nav-actions{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
-  .nav-actions .btn{padding:.6rem 1rem;font-size:.82rem;min-height:42px}
+  .nav-actions{display:flex;align-items:center;gap:.5rem;flex-shrink:0}
+  .nav-actions .btn{padding:.55rem .9rem;font-size:.79rem;min-height:42px}
   .hamburger{
     display:none;background:none;border:none;cursor:pointer;padding:.5rem;
     flex-direction:column;gap:5px;min-height:44px;min-width:44px;
@@ -118,19 +122,23 @@
   .hamburger.active span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
   .hamburger.active span:nth-child(2){opacity:0}
   .hamburger.active span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
-  .mobile-menu{display:none;flex-direction:column;background:#fff;border-top:1px solid var(--border);padding:1rem 4%;gap:.15rem}
+  .mobile-menu{
+    display:none;flex-direction:column;background:#fff;border-top:1px solid var(--border);
+    padding:.85rem clamp(1rem,4vw,2rem) 1.2rem;gap:.15rem;
+    max-height:calc(100vh - 70px);overflow-y:auto;
+  }
   .mobile-menu.open{display:flex}
-  .mobile-menu a{padding:.85rem 1rem;font-weight:600;color:var(--navy);border-radius:8px;font-size:.95rem}
+  .mobile-menu a{padding:.8rem 1rem;font-weight:600;color:var(--navy);border-radius:8px;font-size:.94rem;min-height:44px;display:flex;align-items:center}
   .mobile-menu a:hover{background:var(--light)}
   .mobile-menu .btn{margin-top:.5rem;width:100%}
 
   /* Hero */
   .hero{
-    position:relative;min-height:92vh;display:flex;align-items:center;
+    position:relative;min-height:88vh;display:flex;align-items:center;
     background:
-      linear-gradient(100deg,rgba(5,12,30,.94) 0%,rgba(10,22,51,.82) 42%,rgba(10,22,51,.35) 100%),
-      url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-    color:#fff;padding:5rem 0;overflow:hidden;
+      linear-gradient(100deg,rgba(5,12,30,.95) 0%,rgba(10,22,51,.85) 45%,rgba(10,22,51,.4) 100%),
+      url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1600&q=75') center/cover no-repeat;
+    color:#fff;padding:clamp(3rem,7vw,5rem) 0;overflow:hidden;
   }
   .hero::after{
     content:'';position:absolute;right:-100px;top:50%;transform:translateY(-50%);
@@ -141,72 +149,74 @@
   .hero-inner{max-width:740px;position:relative;z-index:1}
   .hero .eyebrow{color:var(--gold)}
   .hero .eyebrow::before{background:var(--gold)}
-  .hero h1{color:#fff;margin-bottom:1rem;text-shadow:0 2px 24px rgba(0,0,0,.35)}
-  .hero .support{font-size:clamp(1.08rem,2.1vw,1.35rem);font-weight:700;color:var(--gold);margin-bottom:1.2rem}
-  .hero p.lead{color:rgba(255,255,255,.92);font-size:1.05rem;max-width:600px;margin-bottom:2.1rem}
-  .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.6rem}
-  .hero-highlights{display:flex;flex-wrap:wrap;gap:1.8rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.18)}
-  .hero-highlight{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:rgba(255,255,255,.92);font-weight:600}
+  .hero h1{color:#fff;margin-bottom:.9rem;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+  .hero .support{font-size:clamp(1rem,2.1vw,1.3rem);font-weight:700;color:var(--gold);margin-bottom:1rem}
+  .hero p.lead{color:rgba(255,255,255,.92);font-size:clamp(.94rem,2.4vw,1.02rem);max-width:600px;margin-bottom:1.8rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2rem}
+  .hero-highlights{display:flex;flex-wrap:wrap;gap:1.2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.18)}
+  .hero-highlight{display:flex;align-items:center;gap:.65rem;font-size:clamp(.82rem,2.3vw,.88rem);color:rgba(255,255,255,.92);font-weight:600}
   .hero-highlight .dot{
-    width:36px;height:36px;border-radius:10px;background:rgba(245,181,0,.16);
+    width:34px;height:34px;border-radius:9px;background:rgba(245,181,0,.16);
     display:grid;place-items:center;color:var(--gold);flex-shrink:0;
   }
 
   /* About */
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
-  .about-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .about-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;width:100%}
   .about-img img{width:100%;height:100%;object-fit:cover}
   .about-img .accent{
     position:absolute;bottom:0;left:0;background:var(--gold);color:var(--navy);
-    padding:1rem 1.5rem;border-radius:0 var(--radius) 0 0;font-weight:800;font-size:.92rem;
+    padding:.75rem 1.1rem;border-radius:0 var(--radius) 0 0;font-weight:800;
+    font-size:clamp(.75rem,2.2vw,.88rem);max-width:85%;
   }
-  .about-text h2{margin-bottom:1.1rem}
-  .about-text p{margin-bottom:1rem;color:var(--charcoal)}
-  .about-points{margin:1.5rem 0 2rem;display:grid;gap:.75rem}
-  .about-points li{display:flex;gap:.7rem;align-items:flex-start;font-size:.95rem}
+  .about-text h2{margin-bottom:1rem}
+  .about-text p{margin-bottom:.9rem;color:var(--charcoal);font-size:clamp(.92rem,2.4vw,.97rem)}
+  .about-points{margin:1.25rem 0 1.6rem;display:grid;gap:.65rem}
+  .about-points li{display:flex;gap:.65rem;align-items:flex-start;font-size:clamp(.86rem,2.3vw,.93rem)}
   .about-points svg{color:var(--electric);flex-shrink:0;margin-top:.2rem}
 
   /* Services */
   .services{background:var(--light)}
-  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.7rem}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
   .service-card{
     background:#fff;border-radius:var(--radius);overflow:hidden;
     box-shadow:var(--shadow);transition:var(--transition);display:flex;flex-direction:column;
-    border:1px solid var(--border);
+    border:1px solid var(--border);min-width:0;
   }
   .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
-  .service-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy)}
+  .service-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy);width:100%}
   .service-card .img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
   .service-card:hover .img-wrap img{transform:scale(1.06)}
-  .service-body{padding:1.6rem;display:flex;flex-direction:column;flex:1}
+  .service-body{padding:1.4rem;display:flex;flex-direction:column;flex:1;min-width:0}
   .service-tag{
-    display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-    color:var(--electric);background:rgba(37,99,235,.08);padding:.28rem .6rem;border-radius:5px;
-    margin-bottom:.7rem;width:fit-content;
+    display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--electric);background:rgba(37,99,235,.08);padding:.26rem .55rem;border-radius:5px;
+    margin-bottom:.65rem;width:fit-content;max-width:100%;
   }
-  .service-body h3{margin-bottom:.55rem;font-size:1.15rem}
-  .service-body p{font-size:.91rem;color:var(--grey);margin-bottom:1.2rem;flex:1}
-  .service-body .btn{width:100%;font-size:.86rem;padding:.75rem 1rem}
+  .service-body h3{margin-bottom:.5rem;font-size:clamp(1rem,2.8vw,1.12rem)}
+  .service-body p{font-size:clamp(.85rem,2.3vw,.9rem);color:var(--grey);margin-bottom:1.1rem;flex:1}
+  .service-body .btn{width:100%;font-size:.83rem;padding:.72rem .8rem}
 
-  /* Featured service blocks (solar, inverter) */
-  .feature-block{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;margin-bottom:clamp(3rem,6vw,4.5rem)}
+  /* Feature blocks */
+  .feature-block{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,5vw,4rem);align-items:center;margin-bottom:clamp(2.5rem,6vw,4rem)}
   .feature-block:last-child{margin-bottom:0}
   .feature-block.reverse .feature-img{order:2}
-  .feature-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .feature-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;width:100%}
   .feature-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
   .feature-img:hover img{transform:scale(1.04)}
   .feature-img .badge{
-    position:absolute;top:16px;left:16px;background:var(--gold);color:var(--navy);
-    padding:.42rem .85rem;border-radius:8px;font-size:.72rem;font-weight:800;
-    letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 14px rgba(0,0,0,.2);
+    position:absolute;top:12px;left:12px;background:var(--gold);color:var(--navy);
+    padding:.34rem .7rem;border-radius:7px;font-size:.68rem;font-weight:800;
+    letter-spacing:.05em;text-transform:uppercase;box-shadow:0 4px 14px rgba(0,0,0,.2);
   }
-  .feature-text h3{font-size:clamp(1.4rem,2.6vw,1.85rem);margin-bottom:.8rem;font-weight:800;letter-spacing:-.02em}
-  .feature-text p{color:var(--grey);margin-bottom:1.1rem;font-size:.97rem}
-  .feature-list{display:grid;gap:.55rem;margin:1.1rem 0 1.6rem}
-  .feature-list li{display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;color:var(--charcoal)}
+  .feature-text h3{font-size:clamp(1.25rem,3.2vw,1.75rem);margin-bottom:.75rem;font-weight:800;letter-spacing:-.02em}
+  .feature-text p{color:var(--grey);margin-bottom:1rem;font-size:clamp(.9rem,2.4vw,.96rem)}
+  .feature-list{display:grid;gap:.5rem;margin:1rem 0 1.4rem}
+  .feature-list li{display:flex;gap:.55rem;align-items:flex-start;font-size:clamp(.84rem,2.3vw,.89rem);color:var(--charcoal)}
   .feature-list svg{color:var(--electric);flex-shrink:0;margin-top:.22rem}
+  .feature-text .btn{max-width:100%}
 
-  /* Equipment showcase */
+  /* Equipment */
   .equipment{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
   .equipment::before{
     content:'';position:absolute;top:-150px;left:-150px;width:500px;height:500px;
@@ -216,56 +226,54 @@
   .equipment .eyebrow::before{background:var(--gold)}
   .equipment h2{color:#fff}
   .equipment .section-head p{color:rgba(255,255,255,.72)}
-  .equip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.6rem;position:relative}
+  .equip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem;position:relative}
   .equip-card{
     background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);
     border-radius:var(--radius);overflow:hidden;transition:var(--transition);
-    display:flex;flex-direction:column;backdrop-filter:blur(4px);
+    display:flex;flex-direction:column;backdrop-filter:blur(4px);min-width:0;
   }
   .equip-card:hover{transform:translateY(-6px);border-color:rgba(245,181,0,.5);background:rgba(255,255,255,.07)}
-  .equip-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy);position:relative}
+  .equip-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy);position:relative;width:100%}
   .equip-card .img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
   .equip-card:hover .img-wrap img{transform:scale(1.07)}
-  .equip-body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
-  .equip-body h3{color:#fff;font-size:1.08rem;margin-bottom:.5rem}
-  .equip-body p{color:rgba(255,255,255,.7);font-size:.87rem;margin-bottom:1.1rem;flex:1}
-  .equip-body .btn{width:100%;font-size:.84rem;padding:.72rem 1rem}
+  .equip-body{padding:1.25rem;display:flex;flex-direction:column;flex:1;min-width:0}
+  .equip-body h3{color:#fff;font-size:clamp(.98rem,2.7vw,1.06rem);margin-bottom:.45rem}
+  .equip-body p{color:rgba(255,255,255,.7);font-size:clamp(.82rem,2.3vw,.86rem);margin-bottom:1rem;flex:1}
+  .equip-body .btn{width:100%;font-size:.82rem;padding:.7rem .8rem}
 
   /* Why choose */
   .why{background:var(--white)}
-  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.5rem}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem}
   .why-card{
-    background:#fff;border-radius:var(--radius);padding:1.9rem 1.6rem;border:1px solid var(--border);
-    box-shadow:var(--shadow);transition:var(--transition);position:relative;overflow:hidden;
+    background:#fff;border-radius:var(--radius);padding:1.6rem 1.4rem;border:1px solid var(--border);
+    box-shadow:var(--shadow);transition:var(--transition);position:relative;overflow:hidden;min-width:0;
   }
-  .why-card::before{
-    content:'';position:absolute;top:0;left:0;width:0;height:3px;background:var(--gold);transition:width .3s;
-  }
+  .why-card::before{content:'';position:absolute;top:0;left:0;width:0;height:3px;background:var(--gold);transition:width .3s}
   .why-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
   .why-card:hover::before{width:100%}
   .why-card .ic{
-    width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(245,181,0,.12));
-    display:grid;place-items:center;color:var(--electric);margin-bottom:1.1rem;
+    width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(245,181,0,.12));
+    display:grid;place-items:center;color:var(--electric);margin-bottom:1rem;flex-shrink:0;
   }
-  .why-card h3{font-size:1.04rem;margin-bottom:.4rem}
-  .why-card p{font-size:.89rem;color:var(--grey)}
+  .why-card h3{font-size:clamp(.98rem,2.7vw,1.02rem);margin-bottom:.35rem}
+  .why-card p{font-size:clamp(.84rem,2.3vw,.88rem);color:var(--grey)}
 
-  /* How it works */
+  /* Steps */
   .steps-wrap{background:var(--light)}
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;position:relative;margin-top:1rem}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;position:relative;margin-top:1rem}
   .steps::before{
-    content:'';position:absolute;top:40px;left:12%;right:12%;height:2px;
+    content:'';position:absolute;top:38px;left:12%;right:12%;height:2px;
     background:repeating-linear-gradient(90deg,var(--border) 0 10px,transparent 10px 20px);z-index:0;
   }
-  .step{position:relative;z-index:1;text-align:center}
+  .step{position:relative;z-index:1;text-align:center;min-width:0}
   .step-num{
-    width:82px;height:82px;border-radius:50%;background:#fff;border:2px solid var(--border);
-    display:grid;place-items:center;margin:0 auto 1.15rem;font-weight:900;font-size:1.4rem;
+    width:72px;height:72px;border-radius:50%;background:#fff;border:2px solid var(--border);
+    display:grid;place-items:center;margin:0 auto 1rem;font-weight:900;font-size:1.25rem;
     color:var(--navy);box-shadow:var(--shadow);transition:var(--transition);
   }
   .step:hover .step-num{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-4px)}
-  .step h3{font-size:1.05rem;margin-bottom:.45rem}
-  .step p{font-size:.87rem;color:var(--grey);padding:0 .3rem}
+  .step h3{font-size:clamp(.95rem,2.6vw,1.02rem);margin-bottom:.4rem}
+  .step p{font-size:clamp(.82rem,2.3vw,.86rem);color:var(--grey);padding:0 .2rem}
 
   /* Quote form */
   .quote-section{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
@@ -278,153 +286,156 @@
   .quote-section .eyebrow{color:var(--gold)}
   .quote-section .eyebrow::before{background:var(--gold)}
   .quote-section p{color:rgba(255,255,255,.85)}
-  .quote-info{display:grid;gap:1.3rem;margin-top:2rem}
-  .quote-info-item{display:flex;gap:1rem;align-items:flex-start}
+  .quote-info{display:grid;gap:1.1rem;margin-top:1.6rem}
+  .quote-info-item{display:flex;gap:.85rem;align-items:flex-start}
   .quote-info-item .ic{
-    width:44px;height:44px;border-radius:11px;background:rgba(245,181,0,.15);
+    width:42px;height:42px;border-radius:10px;background:rgba(245,181,0,.15);
     display:grid;place-items:center;color:var(--gold);flex-shrink:0;
   }
-  .quote-info-item strong{display:block;color:#fff;font-size:.94rem;margin-bottom:.15rem}
-  .quote-info-item span{color:rgba(255,255,255,.7);font-size:.86rem}
-  form.quote-form{background:#fff;border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.4rem);box-shadow:0 24px 64px rgba(0,0,0,.28);color:var(--charcoal)}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-  .form-group{margin-bottom:1rem}
-  .form-group label{display:block;font-size:.81rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+  .quote-info-item strong{display:block;color:#fff;font-size:clamp(.88rem,2.4vw,.92rem);margin-bottom:.1rem}
+  .quote-info-item span{color:rgba(255,255,255,.7);font-size:clamp(.8rem,2.2vw,.84rem)}
+  form.quote-form{background:#fff;border-radius:var(--radius);padding:clamp(1.15rem,3.5vw,2.2rem);box-shadow:0 24px 64px rgba(0,0,0,.28);color:var(--charcoal);width:100%}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+  .form-group{margin-bottom:.9rem;min-width:0}
+  .form-group label{display:block;font-size:.79rem;font-weight:600;color:var(--navy);margin-bottom:.35rem}
   .form-group label .req{color:#dc2626}
   .form-group input,.form-group select,.form-group textarea{
-    width:100%;padding:.82rem .9rem;border:1.5px solid var(--border);border-radius:9px;
-    font-family:inherit;font-size:.92rem;color:var(--charcoal);background:#fbfcfe;
+    width:100%;padding:.78rem .85rem;border:1.5px solid var(--border);border-radius:9px;
+    font-family:inherit;font-size:.9rem;color:var(--charcoal);background:#fbfcfe;
     transition:border-color .2s,box-shadow .2s;min-height:46px;
   }
-  .form-group textarea{resize:vertical;min-height:88px}
+  .form-group textarea{resize:vertical;min-height:80px}
   .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
     outline:none;border-color:var(--electric);box-shadow:0 0 0 3px rgba(37,99,235,.15);background:#fff;
   }
   .form-group input.error,.form-group select.error,.form-group textarea.error{
     border-color:#dc2626;box-shadow:0 0 0 3px rgba(220,38,38,.1);
   }
-  .error-msg{display:none;color:#dc2626;font-size:.76rem;margin-top:.3rem;font-weight:500}
+  .error-msg{display:none;color:#dc2626;font-size:.74rem;margin-top:.28rem;font-weight:500}
   .error-msg.show{display:block}
-  .form-note{font-size:.77rem;color:var(--grey);margin:.9rem 0 1.1rem;line-height:1.5}
-  .form-status{display:none;padding:.85rem 1rem;border-radius:9px;font-size:.85rem;margin-bottom:1rem;font-weight:500}
+  .form-note{font-size:.75rem;color:var(--grey);margin:.8rem 0 1rem;line-height:1.5}
+  .form-status{display:none;padding:.8rem .9rem;border-radius:9px;font-size:.83rem;margin-bottom:.9rem;font-weight:500;line-height:1.5}
   .form-status.show{display:block}
   .form-status.info{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
   .form-status.warn{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
 
   /* Gallery */
   .gallery{background:var(--light)}
-  .gallery-tabs{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;margin-bottom:2.2rem}
+  .gallery-tabs{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.8rem}
   .gallery-tab{
-    padding:.6rem 1.15rem;border-radius:50px;border:1.5px solid var(--border);background:#fff;
-    font-family:inherit;font-size:.84rem;font-weight:600;color:var(--navy);cursor:pointer;
+    padding:.6rem 1rem;border-radius:50px;border:1.5px solid var(--border);background:#fff;
+    font-family:inherit;font-size:.8rem;font-weight:600;color:var(--navy);cursor:pointer;
     transition:var(--transition);min-height:44px;
   }
   .gallery-tab:hover{border-color:var(--electric);color:var(--electric)}
   .gallery-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
   .gallery-item{
     position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;
-    box-shadow:var(--shadow);background:var(--navy);transition:var(--transition);
+    box-shadow:var(--shadow);background:var(--navy);transition:var(--transition);min-width:0;
   }
   .gallery-item:hover{transform:scale(1.02);box-shadow:var(--shadow-hover)}
   .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
   .gallery-item:hover img{transform:scale(1.08)}
   .gallery-item .caption{
     position:absolute;left:0;right:0;bottom:0;
-    background:linear-gradient(transparent,rgba(10,22,51,.88));
-    color:#fff;padding:1.3rem .9rem .7rem;font-size:.78rem;font-weight:600;
+    background:linear-gradient(transparent,rgba(10,22,51,.9));
+    color:#fff;padding:1.2rem .8rem .6rem;font-size:clamp(.7rem,2vw,.76rem);font-weight:600;
   }
   .gallery-item .illustrative{
-    position:absolute;top:10px;right:10px;background:rgba(255,255,255,.92);
-    color:var(--grey);font-size:.62rem;font-weight:700;letter-spacing:.06em;
-    text-transform:uppercase;padding:.24rem .5rem;border-radius:5px;
+    position:absolute;top:8px;right:8px;background:rgba(255,255,255,.92);
+    color:var(--grey);font-size:.58rem;font-weight:700;letter-spacing:.05em;
+    text-transform:uppercase;padding:.2rem .45rem;border-radius:5px;
   }
   .gallery-item.hidden{display:none}
 
   /* Lightbox */
   .lightbox{
     position:fixed;inset:0;background:rgba(5,12,30,.94);z-index:2000;
-    display:none;align-items:center;justify-content:center;padding:1.5rem;
+    display:none;align-items:center;justify-content:center;padding:1rem;
   }
   .lightbox.open{display:flex}
-  .lightbox img{max-width:92vw;max-height:86vh;border-radius:10px;object-fit:contain}
+  .lightbox img{max-width:94vw;max-height:80vh;border-radius:10px;object-fit:contain}
   .lightbox .close{
-    position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;
-    font-size:2.2rem;cursor:pointer;line-height:1;padding:.3rem .6rem;border-radius:8px;
+    position:absolute;top:12px;right:14px;background:rgba(255,255,255,.1);border:none;color:#fff;
+    font-size:2rem;cursor:pointer;line-height:1;padding:.2rem .7rem;border-radius:8px;
+    min-height:44px;min-width:44px;
   }
-  .lightbox .close:hover{background:rgba(255,255,255,.12)}
+  .lightbox .close:hover{background:rgba(255,255,255,.2)}
 
   /* FAQ */
   .faq-list{max-width:840px;margin-inline:auto}
-  .faq-item{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:.8rem;overflow:hidden;transition:box-shadow .25s}
+  .faq-item{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:.7rem;overflow:hidden;transition:box-shadow .25s}
   .faq-item.open{box-shadow:var(--shadow)}
   .faq-q{
     width:100%;background:none;border:none;cursor:pointer;text-align:left;
-    padding:1.15rem 1.3rem;font-family:inherit;font-size:.97rem;font-weight:600;color:var(--navy);
-    display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:48px;
+    padding:1rem 1.1rem;font-family:inherit;font-size:clamp(.88rem,2.5vw,.94rem);font-weight:600;color:var(--navy);
+    display:flex;justify-content:space-between;align-items:center;gap:.85rem;min-height:48px;line-height:1.4;
   }
   .faq-q .plus{
-    width:28px;height:28px;border-radius:50%;background:var(--light);flex-shrink:0;
+    width:26px;height:26px;border-radius:50%;background:var(--light);flex-shrink:0;
     display:grid;place-items:center;position:relative;transition:var(--transition);
   }
   .faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--navy);border-radius:2px;transition:var(--transition)}
-  .faq-q .plus::before{width:12px;height:2px}
-  .faq-q .plus::after{width:2px;height:12px}
+  .faq-q .plus::before{width:11px;height:2px}
+  .faq-q .plus::after{width:2px;height:11px}
   .faq-item.open .plus{background:var(--gold)}
   .faq-item.open .plus::before,.faq-item.open .plus::after{background:var(--navy)}
   .faq-item.open .plus::after{transform:scaleY(0)}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
-  .faq-a-inner{padding:0 1.3rem 1.2rem;font-size:.9rem;color:var(--grey)}
+  .faq-a-inner{padding:0 1.1rem 1.1rem;font-size:clamp(.85rem,2.3vw,.89rem);color:var(--grey);line-height:1.6}
 
   /* Contact */
   .contact{background:var(--light)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
-  .contact-details{display:grid;gap:1.1rem;margin:1.8rem 0 2rem}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.75rem,5vw,4rem);align-items:start}
+  .contact-details{display:grid;gap:1rem;margin:1.5rem 0 1.6rem}
   .contact-item{
-    display:flex;gap:1rem;align-items:flex-start;background:#fff;padding:1.1rem 1.2rem;
-    border-radius:12px;border:1px solid var(--border);box-shadow:0 2px 10px rgba(10,22,51,.04);
+    display:flex;gap:.85rem;align-items:flex-start;background:#fff;padding:1rem 1.1rem;
+    border-radius:12px;border:1px solid var(--border);box-shadow:0 2px 10px rgba(10,22,51,.04);min-width:0;
   }
   .contact-item .ic{
-    width:44px;height:44px;border-radius:11px;background:rgba(37,99,235,.08);
+    width:42px;height:42px;border-radius:10px;background:rgba(37,99,235,.08);
     display:grid;place-items:center;color:var(--electric);flex-shrink:0;
   }
-  .contact-item strong{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:.15rem}
-  .contact-item span,.contact-item a{font-size:.95rem;font-weight:600;color:var(--navy)}
+  .contact-item > div:last-child{min-width:0;flex:1}
+  .contact-item strong{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;color:var(--grey);margin-bottom:.1rem}
+  .contact-item span,.contact-item a{font-size:clamp(.88rem,2.4vw,.94rem);font-weight:600;color:var(--navy);word-break:break-word}
   .contact-item a:hover{color:var(--electric)}
   .contact-form-card{
-    background:#fff;border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.4rem);
-    box-shadow:var(--shadow);border:1px solid var(--border);
+    background:#fff;border-radius:var(--radius);padding:clamp(1.15rem,3.5vw,2.2rem);
+    box-shadow:var(--shadow);border:1px solid var(--border);width:100%;
   }
-  .contact-form-card h3{margin-bottom:1.2rem;font-size:1.14rem}
+  .contact-form-card h3{margin-bottom:1.1rem;font-size:clamp(1rem,2.8vw,1.1rem)}
 
   /* Footer */
-  .site-footer{background:var(--navy);color:rgba(255,255,255,.75);padding:3.5rem 0 0}
-  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:2.5rem;padding-bottom:2.8rem}
-  .footer-brand .logo{color:#fff;margin-bottom:1rem}
+  .site-footer{background:var(--navy);color:rgba(255,255,255,.75);padding:2.75rem 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:2rem;padding-bottom:2.2rem}
+  .footer-brand .logo{color:#fff;margin-bottom:.9rem}
   .footer-brand .logo-mark{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy)}
   .footer-brand .logo span small{color:rgba(255,255,255,.5)}
-  .footer-brand p{font-size:.87rem;color:rgba(255,255,255,.65);margin-bottom:1.3rem;max-width:300px}
-  .footer-col h4{color:#fff;font-size:.83rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.1rem;font-weight:700}
-  .footer-col ul{display:grid;gap:.58rem}
-  .footer-col a{font-size:.87rem;color:rgba(255,255,255,.7);transition:color .2s}
+  .footer-brand p{font-size:clamp(.82rem,2.3vw,.86rem);color:rgba(255,255,255,.65);margin-bottom:1.1rem;max-width:300px}
+  .footer-col h4{color:#fff;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;margin-bottom:1rem;font-weight:700}
+  .footer-col ul{display:grid;gap:.5rem}
+  .footer-col a{font-size:clamp(.82rem,2.3vw,.86rem);color:rgba(255,255,255,.7);transition:color .2s}
   .footer-col a:hover{color:var(--gold)}
-  .footer-col p{font-size:.87rem;color:rgba(255,255,255,.7);margin-bottom:.5rem}
-  .footer-col .btn{margin-top:.6rem;padding:.7rem 1.1rem;font-size:.82rem;min-height:44px}
+  .footer-col p{font-size:clamp(.82rem,2.3vw,.86rem);color:rgba(255,255,255,.7);margin-bottom:.45rem}
+  .footer-col .btn{margin-top:.5rem;padding:.65rem 1rem;font-size:.79rem;min-height:44px}
   .footer-bottom{
-    border-top:1px solid rgba(255,255,255,.12);padding:1.4rem 0;
-    display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;
-    font-size:.8rem;color:rgba(255,255,255,.55);
+    border-top:1px solid rgba(255,255,255,.12);padding:1.2rem 0;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:.7rem;
+    font-size:.77rem;color:rgba(255,255,255,.55);line-height:1.6;
   }
-  .footer-bottom a{color:rgba(255,255,255,.7)}
+  .footer-bottom a{color:rgba(255,255,255,.7);word-break:break-word}
   .footer-bottom a:hover{color:var(--gold)}
 
   /* Floating WhatsApp */
   .float-wa{
-    position:fixed;bottom:22px;right:22px;z-index:999;
-    width:58px;height:58px;border-radius:50%;background:#25d366;
+    position:fixed;bottom:18px;right:18px;z-index:999;
+    width:56px;height:56px;border-radius:50%;background:#25d366;
     display:grid;place-items:center;color:#fff;
     box-shadow:0 8px 26px rgba(37,211,102,.45);
     transition:transform .25s,box-shadow .25s;
+    padding-bottom:env(safe-area-inset-bottom);
   }
   .float-wa:hover{transform:scale(1.1);box-shadow:0 12px 34px rgba(37,211,102,.6)}
   .float-wa::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:pulse 2s infinite}
@@ -433,29 +444,58 @@
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
   .reveal.visible{opacity:1;transform:none}
 
+  /* Tablet */
   @media(max-width:1080px){
     .nav-links{display:none}
-    .nav-actions .btn-outline-dark{display:none}
     .hamburger{display:flex}
   }
   @media(max-width:960px){
     .about-grid,.feature-block,.quote-grid,.contact-grid{grid-template-columns:1fr}
     .feature-block.reverse .feature-img{order:0}
-    .steps{grid-template-columns:1fr 1fr;gap:2rem}
+    .steps{grid-template-columns:1fr 1fr;gap:1.5rem}
     .steps::before{display:none}
-    .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:1.75rem}
   }
+
+  /* Mobile phones */
   @media(max-width:640px){
+    html{scroll-padding-top:72px}
     .nav-actions .btn-electric{display:none}
-    .hero{min-height:auto;padding:4rem 0}
-    .hero-highlights{gap:1rem;flex-direction:column;align-items:flex-start}
+    .nav-actions .btn-primary{display:none}
+    .hero{min-height:auto;padding:2.5rem 0 3rem}
+    .hero::after{display:none}
+    .hero-ctas{gap:.65rem}
+    .hero-ctas .btn{width:100%}
+    .hero-highlights{gap:.85rem;flex-direction:column;align-items:stretch;padding-top:1.3rem}
+    .hero-highlight{
+      background:rgba(255,255,255,.06);padding:.65rem .85rem;border-radius:10px;
+      border:1px solid rgba(255,255,255,.1);
+    }
     .form-row{grid-template-columns:1fr}
-    .steps{grid-template-columns:1fr}
-    .footer-grid{grid-template-columns:1fr}
-    .footer-bottom{flex-direction:column;text-align:center}
-    .float-wa{width:54px;height:54px;bottom:16px;right:16px}
-    .btn{white-space:normal}
+    .steps{grid-template-columns:1fr;gap:1.3rem}
+    .step{display:flex;gap:1rem;text-align:left;align-items:flex-start}
+    .step-num{margin:0;width:56px;height:56px;font-size:1.1rem;flex-shrink:0}
+    .step h3{margin-bottom:.25rem}
+    .step p{padding:0}
+    .footer-grid{grid-template-columns:1fr;gap:1.75rem}
+    .footer-bottom{flex-direction:column;text-align:center;align-items:center}
+    .float-wa{width:54px;height:54px;bottom:14px;right:14px}
+    .footer-brand .logo span{font-size:1rem}
+    .section-head{margin-bottom:1.75rem}
+    .gallery-tabs{gap:.4rem}
+    .gallery-tab{padding:.5rem .8rem;font-size:.75rem;min-height:42px}
+    .lightbox{padding:.75rem}
+    .lightbox img{max-height:76vh}
   }
+
+  @media(max-width:380px){
+    .logo{font-size:.94rem;gap:.45rem}
+    .logo-mark{width:34px;height:34px;font-size:.85rem}
+    .logo span small{font-size:.5rem;letter-spacing:.1em}
+    .hero-ctas .btn{font-size:.88rem;padding:.82rem 1.1rem}
+    .gallery-tab{font-size:.72rem;padding:.45rem .7rem}
+  }
+
   @media(prefers-reduced-motion:reduce){
     *{animation:none!important;transition:none!important}
     html{scroll-behavior:auto}
@@ -559,7 +599,7 @@
 <section class="section" id="about">
   <div class="container about-grid">
     <div class="about-img reveal">
-      <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1000&q=80" alt="Technician installing a modern solar panel system" loading="lazy" width="1000" height="750">
+      <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=900&q=75" alt="Technician installing a modern solar panel system" loading="lazy" width="900" height="675">
       <div class="accent">Powering Modern Living</div>
     </div>
     <div class="about-text reveal">
@@ -569,19 +609,19 @@
       <p>We help homeowners and businesses explore energy, convenience, and security solutions tailored to their property. From renewable energy systems to smart-home controls and surveillance, our team is ready to discuss your requirements.</p>
       <ul class="about-points">
         <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           Solar and inverter installation enquiries
         </li>
         <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           Smart-home automation solutions
         </li>
         <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           CCTV and surveillance installation enquiries
         </li>
         <li>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           Direct WhatsApp communication
         </li>
       </ul>
@@ -599,10 +639,9 @@
       <p>Explore the service categories below. Contact TEKK ACCESS to discuss your specific project, property, and requirements.</p>
     </div>
     <div class="services-grid">
-      <!-- Solar -->
       <article class="service-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Solar panels installed on a rooftop" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=75" alt="Solar panels installed on a rooftop" loading="lazy" width="700" height="481">
         </div>
         <div class="service-body">
           <span class="service-tag">Solar Energy</span>
@@ -614,10 +653,9 @@
           </a>
         </div>
       </article>
-      <!-- Inverter -->
       <article class="service-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80" alt="Hybrid inverter and battery energy storage system" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=700&q=75" alt="Hybrid inverter and battery energy storage system" loading="lazy" width="700" height="481">
         </div>
         <div class="service-body">
           <span class="service-tag">Backup Power</span>
@@ -629,10 +667,9 @@
           </a>
         </div>
       </article>
-      <!-- Home Automation -->
       <article class="service-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Smart home control panel and automated switches" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=700&q=75" alt="Smart home control panel and automated switches" loading="lazy" width="700" height="481">
         </div>
         <div class="service-body">
           <span class="service-tag">Smart Living</span>
@@ -644,10 +681,9 @@
           </a>
         </div>
       </article>
-      <!-- CCTV -->
       <article class="service-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Outdoor CCTV security camera installation" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=75" alt="Outdoor CCTV security camera installation" loading="lazy" width="700" height="481">
         </div>
         <div class="service-body">
           <span class="service-tag">Security</span>
@@ -659,10 +695,9 @@
           </a>
         </div>
       </article>
-      <!-- Other -->
       <article class="service-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electrical distribution board and professional wiring installation" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=75" alt="Electrical distribution board and professional wiring installation" loading="lazy" width="700" height="481">
         </div>
         <div class="service-body">
           <span class="service-tag">Electrical</span>
@@ -683,7 +718,7 @@
   <div class="container">
     <div class="feature-block">
       <div class="feature-img reveal">
-        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80" alt="Large rooftop solar panel array under clear sky" loading="lazy" width="1000" height="750">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=75" alt="Large rooftop solar panel array under clear sky" loading="lazy" width="900" height="675">
         <span class="badge">Solar Energy</span>
       </div>
       <div class="feature-text reveal">
@@ -710,7 +745,7 @@
   <div class="container">
     <div class="feature-block reverse">
       <div class="feature-img reveal">
-        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=1000&q=80" alt="Hybrid inverter unit and lithium battery energy storage" loading="lazy" width="1000" height="750">
+        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=900&q=75" alt="Hybrid inverter unit and lithium battery energy storage" loading="lazy" width="900" height="675">
         <span class="badge">Backup Power</span>
       </div>
       <div class="feature-text reveal">
@@ -737,7 +772,7 @@
   <div class="container">
     <div class="feature-block">
       <div class="feature-img reveal">
-        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80" alt="Smart home touch control panel on a wall" loading="lazy" width="1000" height="750">
+        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=75" alt="Smart home touch control panel on a wall" loading="lazy" width="900" height="675">
         <span class="badge">Smart Living</span>
       </div>
       <div class="feature-text reveal">
@@ -764,7 +799,7 @@
   <div class="container">
     <div class="feature-block reverse">
       <div class="feature-img reveal">
-        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1000&q=80" alt="Modern CCTV security camera mounted on a building" loading="lazy" width="1000" height="750">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=900&q=75" alt="Modern CCTV security camera mounted on a building" loading="lazy" width="900" height="675">
         <span class="badge">Security</span>
       </div>
       <div class="feature-text reveal">
@@ -797,7 +832,7 @@
     <div class="equip-grid">
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Modern photovoltaic solar panels" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=75" alt="Modern photovoltaic solar panels" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Solar Panels</h3>
@@ -807,7 +842,7 @@
       </article>
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80" alt="Hybrid inverter unit" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=700&q=75" alt="Hybrid inverter unit" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Hybrid Inverters</h3>
@@ -817,7 +852,7 @@
       </article>
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80" alt="Lithium battery energy storage units" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=700&q=75" alt="Lithium battery energy storage units" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Lithium Batteries</h3>
@@ -827,7 +862,7 @@
       </article>
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Solar charge controller and electrical components" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=75" alt="Solar charge controller and electrical components" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Solar Charge Controllers</h3>
@@ -837,7 +872,7 @@
       </article>
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Complete integrated solar system installation" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=700&q=75" alt="Complete integrated solar system installation" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Complete Solar Systems</h3>
@@ -847,7 +882,7 @@
       </article>
       <article class="equip-card reveal">
         <div class="img-wrap">
-          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Residential solar installation on a rooftop" loading="lazy" width="800" height="550">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=75" alt="Residential solar installation on a rooftop" loading="lazy" width="700" height="481">
         </div>
         <div class="equip-body">
           <h3>Installation Solutions</h3>
@@ -925,26 +960,34 @@
     <div class="steps">
       <div class="step reveal">
         <div class="step-num">1</div>
-        <h3>Tell Us What You Need</h3>
-        <p>Choose a service and explain your electrical, energy, automation, or security requirements.</p>
+        <div>
+          <h3>Tell Us What You Need</h3>
+          <p>Choose a service and explain your electrical, energy, automation, or security requirements.</p>
+        </div>
       </div>
       <div class="step reveal">
         <div class="step-num">2</div>
-        <h3>Discuss Your Property</h3>
-        <p>Share relevant details about your home, office, building, or project.</p>
+        <div>
+          <h3>Discuss Your Property</h3>
+          <p>Share relevant details about your home, office, building, or project.</p>
+        </div>
       </div>
       <div class="step reveal">
         <div class="step-num">3</div>
-        <h3>Review Suitable Options</h3>
-        <p>Discuss available equipment, installation requirements, project scope, and pricing with TEKK ACCESS.</p>
+        <div>
+          <h3>Review Suitable Options</h3>
+          <p>Discuss available equipment, installation requirements, project scope, and pricing with TEKK ACCESS.</p>
+        </div>
       </div>
       <div class="step reveal">
         <div class="step-num">4</div>
-        <h3>Confirm Your Project</h3>
-        <p>Proceed once the proposed solution, costs, installation arrangements, and applicable terms have been agreed upon.</p>
+        <div>
+          <h3>Confirm Your Project</h3>
+          <p>Proceed once the proposed solution, costs, installation arrangements, and applicable terms have been agreed upon.</p>
+        </div>
       </div>
     </div>
-    <div style="text-align:center;margin-top:2.6rem">
+    <div style="text-align:center;margin-top:2.2rem">
       <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20would%20like%20to%20start%20an%20enquiry%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-electric">
         Start Your Enquiry
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -1001,7 +1044,7 @@
           </div>
           <div class="form-group">
             <label for="qPhone">WhatsApp Number <span class="req">*</span></label>
-            <input type="tel" id="qPhone" name="phone" autocomplete="tel" required aria-describedby="qPhoneErr">
+            <input type="tel" id="qPhone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="qPhoneErr">
             <p class="error-msg" id="qPhoneErr">Please enter a valid WhatsApp number.</p>
           </div>
         </div>
@@ -1059,60 +1102,60 @@
     </div>
     <div class="gallery-tabs" role="tablist" aria-label="Gallery categories">
       <button class="gallery-tab active" data-cat="all" role="tab" aria-selected="true">All</button>
-      <button class="gallery-tab" data-cat="solar" role="tab" aria-selected="false">Solar Installations</button>
-      <button class="gallery-tab" data-cat="inverter" role="tab" aria-selected="false">Inverter Systems</button>
+      <button class="gallery-tab" data-cat="solar" role="tab" aria-selected="false">Solar</button>
+      <button class="gallery-tab" data-cat="inverter" role="tab" aria-selected="false">Inverters</button>
       <button class="gallery-tab" data-cat="smart" role="tab" aria-selected="false">Smart Homes</button>
-      <button class="gallery-tab" data-cat="cctv" role="tab" aria-selected="false">CCTV &amp; Security</button>
+      <button class="gallery-tab" data-cat="cctv" role="tab" aria-selected="false">CCTV</button>
       <button class="gallery-tab" data-cat="electrical" role="tab" aria-selected="false">Electrical</button>
     </div>
     <div class="gallery-grid" id="galleryGrid">
       <div class="gallery-item" data-cat="solar" tabindex="0" role="button" aria-label="View larger image: Rooftop solar array">
-        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80" alt="Rooftop solar panel array" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=600&q=70" alt="Rooftop solar panel array" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Rooftop Solar Array</div>
       </div>
       <div class="gallery-item" data-cat="solar" tabindex="0" role="button" aria-label="View larger image: Residential solar installation">
-        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80" alt="Residential solar installation" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=600&q=70" alt="Residential solar installation" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Residential Solar Installation</div>
       </div>
       <div class="gallery-item" data-cat="inverter" tabindex="0" role="button" aria-label="View larger image: Hybrid inverter system">
-        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=700&q=80" alt="Hybrid inverter system" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=600&q=70" alt="Hybrid inverter system" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Hybrid Inverter System</div>
       </div>
       <div class="gallery-item" data-cat="inverter" tabindex="0" role="button" aria-label="View larger image: Battery energy storage">
-        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=700&q=80" alt="Lithium battery energy storage" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=600&q=70" alt="Lithium battery energy storage" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Battery Energy Storage</div>
       </div>
       <div class="gallery-item" data-cat="smart" tabindex="0" role="button" aria-label="View larger image: Smart home control panel">
-        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=700&q=80" alt="Smart home control panel" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=70" alt="Smart home control panel" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Smart Home Control Panel</div>
       </div>
       <div class="gallery-item" data-cat="smart" tabindex="0" role="button" aria-label="View larger image: Automated lighting control">
-        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=700&q=80" alt="Automated lighting and smart switches" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=70" alt="Automated lighting and smart switches" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Automated Lighting</div>
       </div>
       <div class="gallery-item" data-cat="cctv" tabindex="0" role="button" aria-label="View larger image: Outdoor CCTV camera">
-        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=80" alt="Outdoor CCTV security camera" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=70" alt="Outdoor CCTV security camera" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Outdoor CCTV Camera</div>
       </div>
       <div class="gallery-item" data-cat="cctv" tabindex="0" role="button" aria-label="View larger image: Surveillance monitor system">
-        <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=700&q=80" alt="Surveillance monitor and recorder" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=600&q=70" alt="Surveillance monitor and recorder" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Surveillance Monitoring</div>
       </div>
       <div class="gallery-item" data-cat="electrical" tabindex="0" role="button" aria-label="View larger image: Electrical distribution board">
-        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Electrical distribution board installation" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=70" alt="Electrical distribution board installation" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Electrical Distribution Board</div>
       </div>
       <div class="gallery-item" data-cat="electrical" tabindex="0" role="button" aria-label="View larger image: Professional wiring installation">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Professional electrical wiring installation" loading="lazy" width="700" height="525">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=70" alt="Professional electrical wiring installation" loading="lazy" width="600" height="450">
         <span class="illustrative">Illustrative</span>
         <div class="caption">Professional Wiring</div>
       </div>
@@ -1197,7 +1240,7 @@
             </div>
           </div>
         </div>
-        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;margin-bottom:1.5rem">
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;margin-bottom:1.25rem">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
           Chat on WhatsApp
         </a>
@@ -1213,7 +1256,7 @@
           </div>
           <div class="form-group">
             <label for="cPhone">WhatsApp Number <span class="req">*</span></label>
-            <input type="tel" id="cPhone" name="phone" autocomplete="tel" required aria-describedby="cPhoneErr">
+            <input type="tel" id="cPhone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="cPhoneErr">
             <p class="error-msg" id="cPhoneErr">Please enter a valid WhatsApp number.</p>
           </div>
           <div class="form-group">
@@ -1224,7 +1267,7 @@
           <p class="form-note">Submitting opens WhatsApp with your message so you can send it directly to TEKK ACCESS.</p>
           <button type="submit" class="btn btn-electric" style="width:100%">Send Enquiry</button>
         </form>
-        <p style="margin-top:1.2rem;font-size:.85rem;color:var(--grey);text-align:center">Need a quote? <a href="#quote" style="color:var(--electric);font-weight:600">Request a quote →</a></p>
+        <p style="margin-top:1.1rem;font-size:.83rem;color:var(--grey);text-align:center">Need a quote? <a href="#quote" style="color:var(--electric);font-weight:600">Request a quote →</a></p>
       </div>
     </div>
   </div>
@@ -1273,7 +1316,7 @@
         <h4>Request a Quote</h4>
         <p>Tell us about your project and receive information about the available options.</p>
         <a href="#quote" class="btn btn-primary" style="margin-top:.4rem">Request a Quote</a>
-        <p style="margin-top:1.4rem"><strong style="color:#fff;font-size:.85rem">WhatsApp</strong><br><a href="https://wa.me/2348069706274" target="_blank" rel="noopener">08069706274</a></p>
+        <p style="margin-top:1.2rem"><strong style="color:#fff;font-size:.83rem">WhatsApp</strong><br><a href="https://wa.me/2348069706274" target="_blank" rel="noopener">08069706274</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -1292,16 +1335,13 @@
 (function(){
   'use strict';
 
-  /* ---------- Year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ---------- Header shadow ---------- */
   const header = document.getElementById('header');
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 10);
   }, {passive:true});
 
-  /* ---------- Mobile menu ---------- */
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   hamburger.addEventListener('click', () => {
@@ -1319,7 +1359,6 @@
     });
   });
 
-  /* ---------- FAQ accordion ---------- */
   document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq-item');
@@ -1338,7 +1377,6 @@
     });
   });
 
-  /* ---------- Scroll reveal ---------- */
   const revealEls = document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     const io = new IntersectionObserver((entries) => {
@@ -1354,7 +1392,6 @@
     revealEls.forEach(el => el.classList.add('visible'));
   }
 
-  /* ---------- Gallery tabs ---------- */
   const tabs = document.querySelectorAll('.gallery-tab');
   const galleryItems = document.querySelectorAll('.gallery-item');
   tabs.forEach(tab => {
@@ -1369,7 +1406,6 @@
     });
   });
 
-  /* ---------- Lightbox ---------- */
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   const lightboxClose = document.getElementById('lightboxClose');
@@ -1403,7 +1439,6 @@
   lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
   document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
 
-  /* ---------- Helpers ---------- */
   const WA_NUMBER = '2348069706274';
   function waUrl(message){
     return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
@@ -1421,7 +1456,6 @@
     el.textContent = msg;
   }
 
-  /* ---------- Quote form ---------- */
   const quoteForm = document.getElementById('quoteForm');
   const quoteStatus = document.getElementById('quoteStatus');
   const qFields = {
@@ -1494,7 +1528,6 @@
     window.open(waUrl(message), '_blank', 'noopener');
   });
 
-  /* ---------- Contact form ---------- */
   const contactForm = document.getElementById('contactForm');
   const contactStatus = document.getElementById('contactStatus');
   const cName = document.getElementById('cName');
