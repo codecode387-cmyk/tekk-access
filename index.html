@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEKK ACCESS — Solar, Inverter, Home Automation & CCTV Installation</title>
+<meta name="description" content="TEKK ACCESS offers solar installation, inverter installation, home automation, CCTV installation and electrical services. Enquire via WhatsApp for a consultation and quote.">
+<meta name="keywords" content="TEKK ACCESS, solar installation, inverter installation, home automation services, CCTV installation services, electrical services, solar and inverter solutions">
+<meta property="og:title" content="TEKK ACCESS — Smart Energy. Smarter Living.">
+<meta property="og:description" content="Premium solar, inverter, home automation, and CCTV installation services. Enquire via WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TEKK ACCESS",
+  "description": "Technology and electrical services: solar installation, inverter installation, home automation, CCTV installation.",
+  "telephone": "+2348069706274",
+  "url": "https://tekkaccess.com/"
+}
+</script>
+<style>
+  :root{
+    --navy:#0a1633;
+    --navy-2:#122251;
+    --electric:#2563eb;
+    --electric-2:#3b82f6;
+    --gold:#f5b500;
+    --gold-dark:#d99a00;
+    --white:#ffffff;
+    --charcoal:#374151;
+    --grey:#6b7280;
+    --light:#f4f7fc;
+    --border:#e3e9f4;
+    --shadow:0 10px 34px rgba(10,22,51,.09);
+    --shadow-hover:0 20px 48px rgba(10,22,51,.16);
+    --radius:16px;
+    --max:1200px;
+    --transition:.3s ease;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    color:var(--charcoal);background:var(--white);line-height:1.65;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{text-decoration:none;color:inherit}
+  ul{list-style:none}
+  .container{width:min(var(--max),92%);margin-inline:auto}
+  h1,h2,h3,h4{color:var(--navy);line-height:1.18;font-weight:800;letter-spacing:-.02em}
+  h1{font-size:clamp(2.2rem,5.4vw,3.8rem)}
+  h2{font-size:clamp(1.75rem,3.7vw,2.6rem)}
+  h3{font-size:1.2rem;font-weight:700}
+  p{color:var(--charcoal)}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;font-size:.76rem;font-weight:700;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--electric);margin-bottom:.75rem;
+  }
+  .eyebrow::before{content:'';width:22px;height:2px;background:var(--gold);border-radius:2px}
+  .section{padding:clamp(3.5rem,7vw,5.5rem) 0}
+  .section-head{max-width:720px;margin-bottom:2.8rem}
+  .section-head.center{margin-inline:auto;text-align:center}
+  .section-head.center .eyebrow::before{display:none}
+  .section-head p{margin-top:.9rem;color:var(--grey);font-size:1.03rem}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+    padding:.92rem 1.65rem;border-radius:11px;font-weight:700;font-size:.94rem;
+    border:2px solid transparent;cursor:pointer;transition:var(--transition);
+    min-height:48px;text-align:center;font-family:inherit;white-space:nowrap;
+  }
+  .btn svg{flex-shrink:0}
+  .btn-primary{background:var(--gold);color:var(--navy);box-shadow:0 8px 22px rgba(245,181,0,.35)}
+  .btn-primary:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(245,181,0,.45)}
+  .btn-electric{background:var(--electric);color:#fff;box-shadow:0 8px 22px rgba(37,99,235,.32)}
+  .btn-electric:hover{background:var(--navy-2);transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,99,235,.42)}
+  .btn-wa{background:#25d366;color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.3)}
+  .btn-wa:hover{background:#1ebe5b;transform:translateY(-2px);box-shadow:0 12px 28px rgba(37,211,102,.42)}
+  .btn-outline{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+  .btn-outline:hover{background:rgba(255,255,255,.14);border-color:#fff}
+  .btn-outline-dark{background:transparent;border-color:var(--navy);color:var(--navy)}
+  .btn-outline-dark:hover{background:var(--navy);color:#fff}
+
+  /* Header */
+  .site-header{
+    position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);
+    backdrop-filter:blur(12px);border-bottom:1px solid var(--border);transition:box-shadow .3s;
+  }
+  .site-header.scrolled{box-shadow:0 4px 22px rgba(10,22,51,.08)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:1rem}
+  .logo{display:flex;align-items:center;gap:.65rem;font-weight:900;font-size:1.14rem;color:var(--navy);letter-spacing:.02em;flex-shrink:0}
+  .logo-mark{
+    width:42px;height:42px;border-radius:11px;
+    background:linear-gradient(135deg,var(--electric),var(--navy));
+    display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:1rem;flex-shrink:0;
+    box-shadow:0 4px 14px rgba(37,99,235,.3);
+  }
+  .logo span small{display:block;font-size:.6rem;font-weight:600;letter-spacing:.14em;color:var(--grey);text-transform:uppercase;line-height:1.3}
+  .nav-links{display:flex;align-items:center;gap:1.35rem}
+  .nav-links a{font-size:.85rem;font-weight:600;color:var(--navy-2);position:relative;padding:.4rem 0;transition:color .2s;white-space:nowrap}
+  .nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .25s}
+  .nav-links a:hover{color:var(--electric)}
+  .nav-links a:hover::after{width:100%}
+  .nav-actions{display:flex;align-items:center;gap:.6rem;flex-shrink:0}
+  .nav-actions .btn{padding:.6rem 1rem;font-size:.82rem;min-height:42px}
+  .hamburger{
+    display:none;background:none;border:none;cursor:pointer;padding:.5rem;
+    flex-direction:column;gap:5px;min-height:44px;min-width:44px;
+    align-items:center;justify-content:center;border-radius:8px;
+  }
+  .hamburger span{display:block;width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:var(--transition)}
+  .hamburger.active span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+  .hamburger.active span:nth-child(2){opacity:0}
+  .hamburger.active span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+  .mobile-menu{display:none;flex-direction:column;background:#fff;border-top:1px solid var(--border);padding:1rem 4%;gap:.15rem}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{padding:.85rem 1rem;font-weight:600;color:var(--navy);border-radius:8px;font-size:.95rem}
+  .mobile-menu a:hover{background:var(--light)}
+  .mobile-menu .btn{margin-top:.5rem;width:100%}
+
+  /* Hero */
+  .hero{
+    position:relative;min-height:92vh;display:flex;align-items:center;
+    background:
+      linear-gradient(100deg,rgba(5,12,30,.94) 0%,rgba(10,22,51,.82) 42%,rgba(10,22,51,.35) 100%),
+      url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color:#fff;padding:5rem 0;overflow:hidden;
+  }
+  .hero::after{
+    content:'';position:absolute;right:-100px;top:50%;transform:translateY(-50%);
+    width:480px;height:480px;border-radius:50%;
+    background:radial-gradient(circle,rgba(245,181,0,.18),transparent 68%);
+    pointer-events:none;
+  }
+  .hero-inner{max-width:740px;position:relative;z-index:1}
+  .hero .eyebrow{color:var(--gold)}
+  .hero .eyebrow::before{background:var(--gold)}
+  .hero h1{color:#fff;margin-bottom:1rem;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+  .hero .support{font-size:clamp(1.08rem,2.1vw,1.35rem);font-weight:700;color:var(--gold);margin-bottom:1.2rem}
+  .hero p.lead{color:rgba(255,255,255,.92);font-size:1.05rem;max-width:600px;margin-bottom:2.1rem}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.6rem}
+  .hero-highlights{display:flex;flex-wrap:wrap;gap:1.8rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.18)}
+  .hero-highlight{display:flex;align-items:center;gap:.7rem;font-size:.9rem;color:rgba(255,255,255,.92);font-weight:600}
+  .hero-highlight .dot{
+    width:36px;height:36px;border-radius:10px;background:rgba(245,181,0,.16);
+    display:grid;place-items:center;color:var(--gold);flex-shrink:0;
+  }
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .about-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .about-img img{width:100%;height:100%;object-fit:cover}
+  .about-img .accent{
+    position:absolute;bottom:0;left:0;background:var(--gold);color:var(--navy);
+    padding:1rem 1.5rem;border-radius:0 var(--radius) 0 0;font-weight:800;font-size:.92rem;
+  }
+  .about-text h2{margin-bottom:1.1rem}
+  .about-text p{margin-bottom:1rem;color:var(--charcoal)}
+  .about-points{margin:1.5rem 0 2rem;display:grid;gap:.75rem}
+  .about-points li{display:flex;gap:.7rem;align-items:flex-start;font-size:.95rem}
+  .about-points svg{color:var(--electric);flex-shrink:0;margin-top:.2rem}
+
+  /* Services */
+  .services{background:var(--light)}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.7rem}
+  .service-card{
+    background:#fff;border-radius:var(--radius);overflow:hidden;
+    box-shadow:var(--shadow);transition:var(--transition);display:flex;flex-direction:column;
+    border:1px solid var(--border);
+  }
+  .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+  .service-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy)}
+  .service-card .img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .service-card:hover .img-wrap img{transform:scale(1.06)}
+  .service-body{padding:1.6rem;display:flex;flex-direction:column;flex:1}
+  .service-tag{
+    display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--electric);background:rgba(37,99,235,.08);padding:.28rem .6rem;border-radius:5px;
+    margin-bottom:.7rem;width:fit-content;
+  }
+  .service-body h3{margin-bottom:.55rem;font-size:1.15rem}
+  .service-body p{font-size:.91rem;color:var(--grey);margin-bottom:1.2rem;flex:1}
+  .service-body .btn{width:100%;font-size:.86rem;padding:.75rem 1rem}
+
+  /* Featured service blocks (solar, inverter) */
+  .feature-block{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center;margin-bottom:clamp(3rem,6vw,4.5rem)}
+  .feature-block:last-child{margin-bottom:0}
+  .feature-block.reverse .feature-img{order:2}
+  .feature-img{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+  .feature-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .feature-img:hover img{transform:scale(1.04)}
+  .feature-img .badge{
+    position:absolute;top:16px;left:16px;background:var(--gold);color:var(--navy);
+    padding:.42rem .85rem;border-radius:8px;font-size:.72rem;font-weight:800;
+    letter-spacing:.06em;text-transform:uppercase;box-shadow:0 4px 14px rgba(0,0,0,.2);
+  }
+  .feature-text h3{font-size:clamp(1.4rem,2.6vw,1.85rem);margin-bottom:.8rem;font-weight:800;letter-spacing:-.02em}
+  .feature-text p{color:var(--grey);margin-bottom:1.1rem;font-size:.97rem}
+  .feature-list{display:grid;gap:.55rem;margin:1.1rem 0 1.6rem}
+  .feature-list li{display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;color:var(--charcoal)}
+  .feature-list svg{color:var(--electric);flex-shrink:0;margin-top:.22rem}
+
+  /* Equipment showcase */
+  .equipment{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
+  .equipment::before{
+    content:'';position:absolute;top:-150px;left:-150px;width:500px;height:500px;
+    border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.22),transparent 70%);pointer-events:none;
+  }
+  .equipment .eyebrow{color:var(--gold)}
+  .equipment .eyebrow::before{background:var(--gold)}
+  .equipment h2{color:#fff}
+  .equipment .section-head p{color:rgba(255,255,255,.72)}
+  .equip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.6rem;position:relative}
+  .equip-card{
+    background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius);overflow:hidden;transition:var(--transition);
+    display:flex;flex-direction:column;backdrop-filter:blur(4px);
+  }
+  .equip-card:hover{transform:translateY(-6px);border-color:rgba(245,181,0,.5);background:rgba(255,255,255,.07)}
+  .equip-card .img-wrap{aspect-ratio:16/11;overflow:hidden;background:var(--navy);position:relative}
+  .equip-card .img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .equip-card:hover .img-wrap img{transform:scale(1.07)}
+  .equip-body{padding:1.4rem;display:flex;flex-direction:column;flex:1}
+  .equip-body h3{color:#fff;font-size:1.08rem;margin-bottom:.5rem}
+  .equip-body p{color:rgba(255,255,255,.7);font-size:.87rem;margin-bottom:1.1rem;flex:1}
+  .equip-body .btn{width:100%;font-size:.84rem;padding:.72rem 1rem}
+
+  /* Why choose */
+  .why{background:var(--white)}
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:1.5rem}
+  .why-card{
+    background:#fff;border-radius:var(--radius);padding:1.9rem 1.6rem;border:1px solid var(--border);
+    box-shadow:var(--shadow);transition:var(--transition);position:relative;overflow:hidden;
+  }
+  .why-card::before{
+    content:'';position:absolute;top:0;left:0;width:0;height:3px;background:var(--gold);transition:width .3s;
+  }
+  .why-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+  .why-card:hover::before{width:100%}
+  .why-card .ic{
+    width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,rgba(37,99,235,.12),rgba(245,181,0,.12));
+    display:grid;place-items:center;color:var(--electric);margin-bottom:1.1rem;
+  }
+  .why-card h3{font-size:1.04rem;margin-bottom:.4rem}
+  .why-card p{font-size:.89rem;color:var(--grey)}
+
+  /* How it works */
+  .steps-wrap{background:var(--light)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;position:relative;margin-top:1rem}
+  .steps::before{
+    content:'';position:absolute;top:40px;left:12%;right:12%;height:2px;
+    background:repeating-linear-gradient(90deg,var(--border) 0 10px,transparent 10px 20px);z-index:0;
+  }
+  .step{position:relative;z-index:1;text-align:center}
+  .step-num{
+    width:82px;height:82px;border-radius:50%;background:#fff;border:2px solid var(--border);
+    display:grid;place-items:center;margin:0 auto 1.15rem;font-weight:900;font-size:1.4rem;
+    color:var(--navy);box-shadow:var(--shadow);transition:var(--transition);
+  }
+  .step:hover .step-num{background:var(--gold);color:var(--navy);border-color:var(--gold);transform:translateY(-4px)}
+  .step h3{font-size:1.05rem;margin-bottom:.45rem}
+  .step p{font-size:.87rem;color:var(--grey);padding:0 .3rem}
+
+  /* Quote form */
+  .quote-section{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;position:relative;overflow:hidden}
+  .quote-section::before{
+    content:'';position:absolute;top:-120px;right:-120px;width:420px;height:420px;
+    background:radial-gradient(circle,rgba(245,181,0,.18),transparent 70%);border-radius:50%;pointer-events:none;
+  }
+  .quote-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:start;position:relative}
+  .quote-section h2{color:#fff}
+  .quote-section .eyebrow{color:var(--gold)}
+  .quote-section .eyebrow::before{background:var(--gold)}
+  .quote-section p{color:rgba(255,255,255,.85)}
+  .quote-info{display:grid;gap:1.3rem;margin-top:2rem}
+  .quote-info-item{display:flex;gap:1rem;align-items:flex-start}
+  .quote-info-item .ic{
+    width:44px;height:44px;border-radius:11px;background:rgba(245,181,0,.15);
+    display:grid;place-items:center;color:var(--gold);flex-shrink:0;
+  }
+  .quote-info-item strong{display:block;color:#fff;font-size:.94rem;margin-bottom:.15rem}
+  .quote-info-item span{color:rgba(255,255,255,.7);font-size:.86rem}
+  form.quote-form{background:#fff;border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.4rem);box-shadow:0 24px 64px rgba(0,0,0,.28);color:var(--charcoal)}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  .form-group{margin-bottom:1rem}
+  .form-group label{display:block;font-size:.81rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+  .form-group label .req{color:#dc2626}
+  .form-group input,.form-group select,.form-group textarea{
+    width:100%;padding:.82rem .9rem;border:1.5px solid var(--border);border-radius:9px;
+    font-family:inherit;font-size:.92rem;color:var(--charcoal);background:#fbfcfe;
+    transition:border-color .2s,box-shadow .2s;min-height:46px;
+  }
+  .form-group textarea{resize:vertical;min-height:88px}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+    outline:none;border-color:var(--electric);box-shadow:0 0 0 3px rgba(37,99,235,.15);background:#fff;
+  }
+  .form-group input.error,.form-group select.error,.form-group textarea.error{
+    border-color:#dc2626;box-shadow:0 0 0 3px rgba(220,38,38,.1);
+  }
+  .error-msg{display:none;color:#dc2626;font-size:.76rem;margin-top:.3rem;font-weight:500}
+  .error-msg.show{display:block}
+  .form-note{font-size:.77rem;color:var(--grey);margin:.9rem 0 1.1rem;line-height:1.5}
+  .form-status{display:none;padding:.85rem 1rem;border-radius:9px;font-size:.85rem;margin-bottom:1rem;font-weight:500}
+  .form-status.show{display:block}
+  .form-status.info{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
+  .form-status.warn{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
+
+  /* Gallery */
+  .gallery{background:var(--light)}
+  .gallery-tabs{display:flex;flex-wrap:wrap;gap:.55rem;justify-content:center;margin-bottom:2.2rem}
+  .gallery-tab{
+    padding:.6rem 1.15rem;border-radius:50px;border:1.5px solid var(--border);background:#fff;
+    font-family:inherit;font-size:.84rem;font-weight:600;color:var(--navy);cursor:pointer;
+    transition:var(--transition);min-height:44px;
+  }
+  .gallery-tab:hover{border-color:var(--electric);color:var(--electric)}
+  .gallery-tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem}
+  .gallery-item{
+    position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;
+    box-shadow:var(--shadow);background:var(--navy);transition:var(--transition);
+  }
+  .gallery-item:hover{transform:scale(1.02);box-shadow:var(--shadow-hover)}
+  .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .gallery-item:hover img{transform:scale(1.08)}
+  .gallery-item .caption{
+    position:absolute;left:0;right:0;bottom:0;
+    background:linear-gradient(transparent,rgba(10,22,51,.88));
+    color:#fff;padding:1.3rem .9rem .7rem;font-size:.78rem;font-weight:600;
+  }
+  .gallery-item .illustrative{
+    position:absolute;top:10px;right:10px;background:rgba(255,255,255,.92);
+    color:var(--grey);font-size:.62rem;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;padding:.24rem .5rem;border-radius:5px;
+  }
+  .gallery-item.hidden{display:none}
+
+  /* Lightbox */
+  .lightbox{
+    position:fixed;inset:0;background:rgba(5,12,30,.94);z-index:2000;
+    display:none;align-items:center;justify-content:center;padding:1.5rem;
+  }
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:92vw;max-height:86vh;border-radius:10px;object-fit:contain}
+  .lightbox .close{
+    position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;
+    font-size:2.2rem;cursor:pointer;line-height:1;padding:.3rem .6rem;border-radius:8px;
+  }
+  .lightbox .close:hover{background:rgba(255,255,255,.12)}
+
+  /* FAQ */
+  .faq-list{max-width:840px;margin-inline:auto}
+  .faq-item{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:.8rem;overflow:hidden;transition:box-shadow .25s}
+  .faq-item.open{box-shadow:var(--shadow)}
+  .faq-q{
+    width:100%;background:none;border:none;cursor:pointer;text-align:left;
+    padding:1.15rem 1.3rem;font-family:inherit;font-size:.97rem;font-weight:600;color:var(--navy);
+    display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:48px;
+  }
+  .faq-q .plus{
+    width:28px;height:28px;border-radius:50%;background:var(--light);flex-shrink:0;
+    display:grid;place-items:center;position:relative;transition:var(--transition);
+  }
+  .faq-q .plus::before,.faq-q .plus::after{content:'';position:absolute;background:var(--navy);border-radius:2px;transition:var(--transition)}
+  .faq-q .plus::before{width:12px;height:2px}
+  .faq-q .plus::after{width:2px;height:12px}
+  .faq-item.open .plus{background:var(--gold)}
+  .faq-item.open .plus::before,.faq-item.open .plus::after{background:var(--navy)}
+  .faq-item.open .plus::after{transform:scaleY(0)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-a-inner{padding:0 1.3rem 1.2rem;font-size:.9rem;color:var(--grey)}
+
+  /* Contact */
+  .contact{background:var(--light)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  .contact-details{display:grid;gap:1.1rem;margin:1.8rem 0 2rem}
+  .contact-item{
+    display:flex;gap:1rem;align-items:flex-start;background:#fff;padding:1.1rem 1.2rem;
+    border-radius:12px;border:1px solid var(--border);box-shadow:0 2px 10px rgba(10,22,51,.04);
+  }
+  .contact-item .ic{
+    width:44px;height:44px;border-radius:11px;background:rgba(37,99,235,.08);
+    display:grid;place-items:center;color:var(--electric);flex-shrink:0;
+  }
+  .contact-item strong{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:.15rem}
+  .contact-item span,.contact-item a{font-size:.95rem;font-weight:600;color:var(--navy)}
+  .contact-item a:hover{color:var(--electric)}
+  .contact-form-card{
+    background:#fff;border-radius:var(--radius);padding:clamp(1.5rem,3vw,2.4rem);
+    box-shadow:var(--shadow);border:1px solid var(--border);
+  }
+  .contact-form-card h3{margin-bottom:1.2rem;font-size:1.14rem}
+
+  /* Footer */
+  .site-footer{background:var(--navy);color:rgba(255,255,255,.75);padding:3.5rem 0 0}
+  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:2.5rem;padding-bottom:2.8rem}
+  .footer-brand .logo{color:#fff;margin-bottom:1rem}
+  .footer-brand .logo-mark{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--navy)}
+  .footer-brand .logo span small{color:rgba(255,255,255,.5)}
+  .footer-brand p{font-size:.87rem;color:rgba(255,255,255,.65);margin-bottom:1.3rem;max-width:300px}
+  .footer-col h4{color:#fff;font-size:.83rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:1.1rem;font-weight:700}
+  .footer-col ul{display:grid;gap:.58rem}
+  .footer-col a{font-size:.87rem;color:rgba(255,255,255,.7);transition:color .2s}
+  .footer-col a:hover{color:var(--gold)}
+  .footer-col p{font-size:.87rem;color:rgba(255,255,255,.7);margin-bottom:.5rem}
+  .footer-col .btn{margin-top:.6rem;padding:.7rem 1.1rem;font-size:.82rem;min-height:44px}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.12);padding:1.4rem 0;
+    display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;
+    font-size:.8rem;color:rgba(255,255,255,.55);
+  }
+  .footer-bottom a{color:rgba(255,255,255,.7)}
+  .footer-bottom a:hover{color:var(--gold)}
+
+  /* Floating WhatsApp */
+  .float-wa{
+    position:fixed;bottom:22px;right:22px;z-index:999;
+    width:58px;height:58px;border-radius:50%;background:#25d366;
+    display:grid;place-items:center;color:#fff;
+    box-shadow:0 8px 26px rgba(37,211,102,.45);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .float-wa:hover{transform:scale(1.1);box-shadow:0 12px 34px rgba(37,211,102,.6)}
+  .float-wa::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid rgba(37,211,102,.5);animation:pulse 2s infinite}
+  @keyframes pulse{0%{transform:scale(1);opacity:.8}70%{transform:scale(1.35);opacity:0}100%{opacity:0}}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  @media(max-width:1080px){
+    .nav-links{display:none}
+    .nav-actions .btn-outline-dark{display:none}
+    .hamburger{display:flex}
+  }
+  @media(max-width:960px){
+    .about-grid,.feature-block,.quote-grid,.contact-grid{grid-template-columns:1fr}
+    .feature-block.reverse .feature-img{order:0}
+    .steps{grid-template-columns:1fr 1fr;gap:2rem}
+    .steps::before{display:none}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  }
+  @media(max-width:640px){
+    .nav-actions .btn-electric{display:none}
+    .hero{min-height:auto;padding:4rem 0}
+    .hero-highlights{gap:1rem;flex-direction:column;align-items:flex-start}
+    .form-row{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr}
+    .footer-bottom{flex-direction:column;text-align:center}
+    .float-wa{width:54px;height:54px;bottom:16px;right:16px}
+    .btn{white-space:normal}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" aria-label="TEKK ACCESS home">
+      <div class="logo-mark">TA</div>
+      <span>TEKK ACCESS<small>Electrical &amp; Technology</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#solar">Solar</a>
+      <a href="#inverter">Inverters</a>
+      <a href="#automation">Automation</a>
+      <a href="#cctv">CCTV</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#quote" class="btn btn-primary">Request a Quote</a>
+      <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa" aria-label="Chat on WhatsApp">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+        WhatsApp
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#solar">Solar Solutions</a>
+    <a href="#inverter">Inverter Systems</a>
+    <a href="#automation">Home Automation</a>
+    <a href="#cctv">CCTV &amp; Security</a>
+    <a href="#equipment">Equipment</a>
+    <a href="#quote">Request a Quote</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa">Chat on WhatsApp</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow">Electrical &amp; Technology Solutions</span>
+      <h1>Smart Energy. Smarter Living.</h1>
+      <p class="support">We Offer the Best Electrical Services.</p>
+      <p class="lead">Power your home or business with modern electrical and technology solutions from TEKK ACCESS. From solar and inverter installations to home automation and CCTV security, explore solutions designed around your needs.</p>
+      <div class="hero-ctas">
+        <a href="#quote" class="btn btn-primary">
+          Request a Quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="hero-highlights">
+        <div class="hero-highlight">
+          <div class="dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          </div>
+          Solar &amp; Inverter Solutions
+        </div>
+        <div class="hero-highlight">
+          <div class="dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          Smart Home Automation
+        </div>
+        <div class="hero-highlight">
+          <div class="dot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          CCTV &amp; Security Systems
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-img reveal">
+      <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1000&q=80" alt="Technician installing a modern solar panel system" loading="lazy" width="1000" height="750">
+      <div class="accent">Powering Modern Living</div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">About Us</span>
+      <h2>Modern Electrical &amp; Technology Solutions</h2>
+      <p>TEKK ACCESS provides solar installation, inverter installation, home automation, CCTV installation, and related electrical services for residential and commercial customers.</p>
+      <p>We help homeowners and businesses explore energy, convenience, and security solutions tailored to their property. From renewable energy systems to smart-home controls and surveillance, our team is ready to discuss your requirements.</p>
+      <ul class="about-points">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Solar and inverter installation enquiries
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Smart-home automation solutions
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          CCTV and surveillance installation enquiries
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          Direct WhatsApp communication
+        </li>
+      </ul>
+      <a href="#contact" class="btn btn-outline-dark">Talk to Our Team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES OVERVIEW ============ -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>Complete Electrical and Technology Solutions</h2>
+      <p>Explore the service categories below. Contact TEKK ACCESS to discuss your specific project, property, and requirements.</p>
+    </div>
+    <div class="services-grid">
+      <!-- Solar -->
+      <article class="service-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Solar panels installed on a rooftop" loading="lazy" width="800" height="550">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Solar Energy</span>
+          <h3>Solar Installation</h3>
+          <p>Explore solar installation solutions designed to help homes and businesses make use of renewable energy.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20solar%20installation.%20Please%20help%20me%20understand%20the%20suitable%20options%20for%20my%20property." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+            Enquire About Solar Installation
+          </a>
+        </div>
+      </article>
+      <!-- Inverter -->
+      <article class="service-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80" alt="Hybrid inverter and battery energy storage system" loading="lazy" width="800" height="550">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Backup Power</span>
+          <h3>Inverter Installation</h3>
+          <p>Explore inverter and battery solutions for your power needs. Discuss your consumption and backup requirements.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20need%20information%20about%20inverter%20installation.%20Please%20help%20me%20choose%20a%20suitable%20system%20based%20on%20my%20power%20requirements." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+            Enquire About Inverters
+          </a>
+        </div>
+      </article>
+      <!-- Home Automation -->
+      <article class="service-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Smart home control panel and automated switches" loading="lazy" width="800" height="550">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Smart Living</span>
+          <h3>Home Automation</h3>
+          <p>Discover smart-home solutions that can help you control selected home functions more conveniently.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20home%20automation.%20Please%20tell%20me%20about%20the%20available%20solutions%20and%20installation%20options." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+            Explore Home Automation
+          </a>
+        </div>
+      </article>
+      <!-- CCTV -->
+      <article class="service-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Outdoor CCTV security camera installation" loading="lazy" width="800" height="550">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Security</span>
+          <h3>CCTV &amp; Security</h3>
+          <p>Explore CCTV and surveillance installation options for residential and commercial properties.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20CCTV%20installation.%20Please%20help%20me%20understand%20the%20available%20options%20for%20my%20property." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+            Enquire About CCTV
+          </a>
+        </div>
+      </article>
+      <!-- Other -->
+      <article class="service-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Electrical distribution board and professional wiring installation" loading="lazy" width="800" height="550">
+        </div>
+        <div class="service-body">
+          <span class="service-tag">Electrical</span>
+          <h3>Other Electrical Services</h3>
+          <p>Need another electrical or technology solution? Contact TEKK ACCESS to explain your requirements and confirm availability.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20have%20an%20electrical%20or%20technology%20project%20I%27d%20like%20to%20discuss.%20Please%20let%20me%20know%20how%20you%20can%20assist." target="_blank" rel="noopener" class="btn btn-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+            Discuss My Project
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLAR SECTION ============ -->
+<section class="section" id="solar">
+  <div class="container">
+    <div class="feature-block">
+      <div class="feature-img reveal">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80" alt="Large rooftop solar panel array under clear sky" loading="lazy" width="1000" height="750">
+        <span class="badge">Solar Energy</span>
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">Solar Installation</span>
+        <h3>Power Your Property With Solar Energy</h3>
+        <p>Explore solar installation solutions designed to help homes and businesses make use of renewable energy. TEKK ACCESS can discuss your electricity needs and the solar setup suitable for your property.</p>
+        <ul class="feature-list">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Rooftop solar panel installations</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Mounting structures and panel arrays</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Residential and commercial solar systems</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Technician-supported installations</li>
+        </ul>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20solar%20installation.%20Please%20help%20me%20understand%20the%20suitable%20options%20for%20my%20property." target="_blank" rel="noopener" class="btn btn-electric">
+          Enquire About Solar Installation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INVERTER SECTION ============ -->
+<section class="section" id="inverter" style="background:var(--light)">
+  <div class="container">
+    <div class="feature-block reverse">
+      <div class="feature-img reveal">
+        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=1000&q=80" alt="Hybrid inverter unit and lithium battery energy storage" loading="lazy" width="1000" height="750">
+        <span class="badge">Backup Power</span>
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">Inverter Installation</span>
+        <h3>Reliable Backup Power Solutions</h3>
+        <p>Explore inverter and battery solutions for your power needs. Contact TEKK ACCESS to discuss your electricity consumption, backup requirements, and suitable system options.</p>
+        <ul class="feature-list">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Hybrid inverter units</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Lithium battery banks and storage</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Professionally installed backup systems</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>System options based on your power needs</li>
+        </ul>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20need%20information%20about%20inverter%20installation.%20Please%20help%20me%20choose%20a%20suitable%20system%20based%20on%20my%20power%20requirements." target="_blank" rel="noopener" class="btn btn-electric">
+          Enquire About Inverters
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOME AUTOMATION ============ -->
+<section class="section" id="automation">
+  <div class="container">
+    <div class="feature-block">
+      <div class="feature-img reveal">
+        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80" alt="Smart home touch control panel on a wall" loading="lazy" width="1000" height="750">
+        <span class="badge">Smart Living</span>
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">Home Automation</span>
+        <h3>Make Your Home Smarter</h3>
+        <p>Discover smart-home solutions that can help you control selected home functions more conveniently. Contact TEKK ACCESS to discuss the automation features suitable for your property.</p>
+        <ul class="feature-list">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Smart lighting and automated switches</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Touch and smart-home control panels</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Connected electrical controls</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Integrated home convenience systems</li>
+        </ul>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20home%20automation.%20Please%20tell%20me%20about%20the%20available%20solutions%20and%20installation%20options." target="_blank" rel="noopener" class="btn btn-electric">
+          Explore Home Automation
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CCTV ============ -->
+<section class="section" id="cctv" style="background:var(--light)">
+  <div class="container">
+    <div class="feature-block reverse">
+      <div class="feature-img reveal">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1000&q=80" alt="Modern CCTV security camera mounted on a building" loading="lazy" width="1000" height="750">
+        <span class="badge">Security</span>
+      </div>
+      <div class="feature-text reveal">
+        <span class="eyebrow">CCTV Installation &amp; Security</span>
+        <h3>Smarter Security for Your Property</h3>
+        <p>Explore CCTV and surveillance installation options for residential and commercial properties. Contact TEKK ACCESS to discuss your security requirements and suitable camera arrangements.</p>
+        <ul class="feature-list">
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Indoor and outdoor security cameras</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Dome and bullet camera options</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Surveillance monitors and recorders</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Residential and business CCTV installations</li>
+        </ul>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20CCTV%20installation.%20Please%20help%20me%20understand%20the%20available%20options%20for%20my%20property." target="_blank" rel="noopener" class="btn btn-electric">
+          Enquire About CCTV
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPMENT SHOWCASE ============ -->
+<section class="section equipment" id="equipment">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Equipment &amp; Installation Options</span>
+      <h2>Explore Solar and Energy Equipment</h2>
+      <p>Browse the categories below to understand the types of equipment involved in solar and energy installations. Enquire via WhatsApp for information about available options and installation services.</p>
+    </div>
+    <div class="equip-grid">
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&q=80" alt="Modern photovoltaic solar panels" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Solar Panels</h3>
+          <p>Modern photovoltaic panels used in residential and commercial solar installations.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Solar%20Panels.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=800&q=80" alt="Hybrid inverter unit" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Hybrid Inverters</h3>
+          <p>Hybrid inverter units that combine solar input and battery backup functionality.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Hybrid%20Inverters.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80" alt="Lithium battery energy storage units" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Lithium Batteries</h3>
+          <p>Energy storage batteries used to support inverter and solar systems.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Lithium%20Batteries.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="Solar charge controller and electrical components" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Solar Charge Controllers</h3>
+          <p>Charge controller equipment used to regulate solar charging systems.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Solar%20Charge%20Controllers.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80" alt="Complete integrated solar system installation" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Complete Solar Systems</h3>
+          <p>Integrated solar panel, inverter, and battery installations for homes and businesses.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Complete%20Solar%20Systems.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+      <article class="equip-card reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" alt="Residential solar installation on a rooftop" loading="lazy" width="800" height="550">
+        </div>
+        <div class="equip-body">
+          <h3>Installation Solutions</h3>
+          <p>Residential and commercial installation imagery showing solar setups in practice.</p>
+          <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%27m%20interested%20in%20Installation%20Solutions.%20Please%20provide%20information%20about%20available%20options%20and%20installation%20services." target="_blank" rel="noopener" class="btn btn-wa">Enquire on WhatsApp</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE ============ -->
+<section class="section why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why TEKK ACCESS</span>
+      <h2>Why Choose TEKK ACCESS?</h2>
+      <p>Customer-focused benefits that make it easier to discuss your electrical and technology requirements.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        </div>
+        <h3>Multiple Service Categories</h3>
+        <p>Access solar, inverter, automation, CCTV, and electrical service enquiries in one place.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </div>
+        <h3>Solar &amp; Inverter Enquiries</h3>
+        <p>Discuss solar installation and inverter backup options with our team.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Smart-Home Automation</h3>
+        <p>Explore automation features that can make your property more convenient.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <h3>CCTV &amp; Surveillance Enquiries</h3>
+        <p>Ask about CCTV installation options for your home or business.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+        </div>
+        <h3>Direct WhatsApp Communication</h3>
+        <p>Reach the team quickly via WhatsApp for all enquiries.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Project-Specific Discussion</h3>
+        <p>Discuss your individual property and project requirements with our team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section steps-wrap" id="how-it-works">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Simple Process</span>
+      <h2>How It Works</h2>
+      <p>A clear four-step process to get from initial enquiry to a confirmed project.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h3>Tell Us What You Need</h3>
+        <p>Choose a service and explain your electrical, energy, automation, or security requirements.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">2</div>
+        <h3>Discuss Your Property</h3>
+        <p>Share relevant details about your home, office, building, or project.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">3</div>
+        <h3>Review Suitable Options</h3>
+        <p>Discuss available equipment, installation requirements, project scope, and pricing with TEKK ACCESS.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">4</div>
+        <h3>Confirm Your Project</h3>
+        <p>Proceed once the proposed solution, costs, installation arrangements, and applicable terms have been agreed upon.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.6rem">
+      <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20would%20like%20to%20start%20an%20enquiry%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-electric">
+        Start Your Enquiry
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE FORM ============ -->
+<section class="section quote-section" id="quote">
+  <div class="container quote-grid">
+    <div class="reveal">
+      <span class="eyebrow">Request a Quote</span>
+      <h2>Let's Find the Right Solution for You</h2>
+      <p>Tell us about your project, and contact TEKK ACCESS to discuss your requirements and receive information about the available options.</p>
+      <div class="quote-info">
+        <div class="quote-info-item">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <strong>WhatsApp Enquiry</strong>
+            <span>The form prepares a message for you to send via WhatsApp.</span>
+          </div>
+        </div>
+        <div class="quote-info-item">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <div>
+            <strong>Share Project Details</strong>
+            <span>Tell us about your property, service needs, and requirements.</span>
+          </div>
+        </div>
+        <div class="quote-info-item">
+          <div class="ic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div>
+            <strong>Review &amp; Confirm</strong>
+            <span>Discuss options and pricing directly, then confirm your project.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <form class="quote-form" id="quoteForm" novalidate>
+        <div class="form-status" id="quoteStatus" role="status" aria-live="polite"></div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qName">Full Name <span class="req">*</span></label>
+            <input type="text" id="qName" name="name" autocomplete="name" required aria-describedby="qNameErr">
+            <p class="error-msg" id="qNameErr">Please enter your full name.</p>
+          </div>
+          <div class="form-group">
+            <label for="qPhone">WhatsApp Number <span class="req">*</span></label>
+            <input type="tel" id="qPhone" name="phone" autocomplete="tel" required aria-describedby="qPhoneErr">
+            <p class="error-msg" id="qPhoneErr">Please enter a valid WhatsApp number.</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="qService">Service Required <span class="req">*</span></label>
+            <select id="qService" name="service" required aria-describedby="qServiceErr">
+              <option value="">Select a service</option>
+              <option value="Solar Installation">Solar Installation</option>
+              <option value="Inverter Installation">Inverter Installation</option>
+              <option value="Home Automation">Home Automation</option>
+              <option value="CCTV Installation">CCTV Installation</option>
+              <option value="Other Electrical Services">Other Electrical Services</option>
+            </select>
+            <p class="error-msg" id="qServiceErr">Please select a service.</p>
+          </div>
+          <div class="form-group">
+            <label for="qProperty">Property Type <span class="req">*</span></label>
+            <select id="qProperty" name="property" required aria-describedby="qPropertyErr">
+              <option value="">Select property type</option>
+              <option value="Residential">Residential</option>
+              <option value="Commercial">Commercial</option>
+            </select>
+            <p class="error-msg" id="qPropertyErr">Please select a property type.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="qLocation">Location or Area <span class="req">*</span></label>
+          <input type="text" id="qLocation" name="location" placeholder="e.g. City, area, or neighbourhood" required aria-describedby="qLocationErr">
+          <p class="error-msg" id="qLocationErr">Please enter your location or area.</p>
+        </div>
+        <div class="form-group">
+          <label for="qDescription">Project Description <span class="req">*</span></label>
+          <textarea id="qDescription" name="description" placeholder="Tell us about your project, property, and requirements..." required aria-describedby="qDescriptionErr"></textarea>
+          <p class="error-msg" id="qDescriptionErr">Please describe your project.</p>
+        </div>
+        <div class="form-group">
+          <label for="qAdditional">Additional Requirements <span style="font-weight:400;color:var(--grey)">(optional)</span></label>
+          <textarea id="qAdditional" name="additional" placeholder="Any other details you'd like to share..."></textarea>
+        </div>
+        <p class="form-note">This form opens WhatsApp with your details. You must press Send in WhatsApp to deliver your message to TEKK ACCESS. This is an enquiry, not a confirmed booking.</p>
+        <button type="submit" class="btn btn-primary" style="width:100%">Request My Quote</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Gallery</span>
+      <h2>Our Solutions in Action</h2>
+      <p>Illustrative photographs of the types of solutions and installations TEKK ACCESS works with. Actual project photographs can be added by the business.</p>
+    </div>
+    <div class="gallery-tabs" role="tablist" aria-label="Gallery categories">
+      <button class="gallery-tab active" data-cat="all" role="tab" aria-selected="true">All</button>
+      <button class="gallery-tab" data-cat="solar" role="tab" aria-selected="false">Solar Installations</button>
+      <button class="gallery-tab" data-cat="inverter" role="tab" aria-selected="false">Inverter Systems</button>
+      <button class="gallery-tab" data-cat="smart" role="tab" aria-selected="false">Smart Homes</button>
+      <button class="gallery-tab" data-cat="cctv" role="tab" aria-selected="false">CCTV &amp; Security</button>
+      <button class="gallery-tab" data-cat="electrical" role="tab" aria-selected="false">Electrical</button>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" data-cat="solar" tabindex="0" role="button" aria-label="View larger image: Rooftop solar array">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=700&q=80" alt="Rooftop solar panel array" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Rooftop Solar Array</div>
+      </div>
+      <div class="gallery-item" data-cat="solar" tabindex="0" role="button" aria-label="View larger image: Residential solar installation">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=700&q=80" alt="Residential solar installation" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Residential Solar Installation</div>
+      </div>
+      <div class="gallery-item" data-cat="inverter" tabindex="0" role="button" aria-label="View larger image: Hybrid inverter system">
+        <img src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&w=700&q=80" alt="Hybrid inverter system" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Hybrid Inverter System</div>
+      </div>
+      <div class="gallery-item" data-cat="inverter" tabindex="0" role="button" aria-label="View larger image: Battery energy storage">
+        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=700&q=80" alt="Lithium battery energy storage" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Battery Energy Storage</div>
+      </div>
+      <div class="gallery-item" data-cat="smart" tabindex="0" role="button" aria-label="View larger image: Smart home control panel">
+        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=700&q=80" alt="Smart home control panel" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Smart Home Control Panel</div>
+      </div>
+      <div class="gallery-item" data-cat="smart" tabindex="0" role="button" aria-label="View larger image: Automated lighting control">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=700&q=80" alt="Automated lighting and smart switches" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Automated Lighting</div>
+      </div>
+      <div class="gallery-item" data-cat="cctv" tabindex="0" role="button" aria-label="View larger image: Outdoor CCTV camera">
+        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=700&q=80" alt="Outdoor CCTV security camera" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Outdoor CCTV Camera</div>
+      </div>
+      <div class="gallery-item" data-cat="cctv" tabindex="0" role="button" aria-label="View larger image: Surveillance monitor system">
+        <img src="https://images.unsplash.com/photo-1551808525-51a94da548ce?auto=format&fit=crop&w=700&q=80" alt="Surveillance monitor and recorder" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Surveillance Monitoring</div>
+      </div>
+      <div class="gallery-item" data-cat="electrical" tabindex="0" role="button" aria-label="View larger image: Electrical distribution board">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Electrical distribution board installation" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Electrical Distribution Board</div>
+      </div>
+      <div class="gallery-item" data-cat="electrical" tabindex="0" role="button" aria-label="View larger image: Professional wiring installation">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Professional electrical wiring installation" loading="lazy" width="700" height="525">
+        <span class="illustrative">Illustrative</span>
+        <div class="caption">Professional Wiring</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+  <button class="close" id="lightboxClose" aria-label="Close image preview">&times;</button>
+  <img src="" alt="" id="lightboxImg">
+</div>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about TEKK ACCESS services and how to enquire.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">What services does TEKK ACCESS offer?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">TEKK ACCESS offers solar and inverter installation, home automation, CCTV installation, and related electrical services.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Can you help me choose a solar system for my home?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Contact TEKK ACCESS with your power requirements and property details to discuss suitable solar options.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Can I enquire about inverter and battery installation?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. You can contact TEKK ACCESS through WhatsApp to discuss your backup power requirements and available options.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Do you provide CCTV installation for businesses?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">You can contact TEKK ACCESS to discuss CCTV requirements for your business or property.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">Can I install smart-home automation in my existing home?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Contact TEKK ACCESS to discuss your property, desired automation features, and installation requirements.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">How can I get a quotation?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Use the website's quotation form or send your project details through WhatsApp.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">How do I contact TEKK ACCESS?<span class="plus" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Use the WhatsApp button displayed throughout the website.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Let's Talk About Your Next Project</h2>
+      <p>Whether you need solar installation, inverter backup, home automation, CCTV security, or another electrical solution, contact TEKK ACCESS to discuss your requirements.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <strong>Business Name</strong>
+              <span>TEKK ACCESS</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ic">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/2348069706274" target="_blank" rel="noopener">08069706274</a>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;margin-bottom:1.5rem">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-card reveal">
+        <h3>General Enquiry</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-status" id="contactStatus" role="status" aria-live="polite"></div>
+          <div class="form-group">
+            <label for="cName">Full Name <span class="req">*</span></label>
+            <input type="text" id="cName" name="name" autocomplete="name" required aria-describedby="cNameErr">
+            <p class="error-msg" id="cNameErr">Please enter your name.</p>
+          </div>
+          <div class="form-group">
+            <label for="cPhone">WhatsApp Number <span class="req">*</span></label>
+            <input type="tel" id="cPhone" name="phone" autocomplete="tel" required aria-describedby="cPhoneErr">
+            <p class="error-msg" id="cPhoneErr">Please enter a valid WhatsApp number.</p>
+          </div>
+          <div class="form-group">
+            <label for="cMessage">Message <span class="req">*</span></label>
+            <textarea id="cMessage" name="message" placeholder="How can we help you?" required aria-describedby="cMessageErr"></textarea>
+            <p class="error-msg" id="cMessageErr">Please enter your message.</p>
+          </div>
+          <p class="form-note">Submitting opens WhatsApp with your message so you can send it directly to TEKK ACCESS.</p>
+          <button type="submit" class="btn btn-electric" style="width:100%">Send Enquiry</button>
+        </form>
+        <p style="margin-top:1.2rem;font-size:.85rem;color:var(--grey);text-align:center">Need a quote? <a href="#quote" style="color:var(--electric);font-weight:600">Request a quote →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <div class="logo-mark">TA</div>
+          <span>TEKK ACCESS<small>Electrical &amp; Technology</small></span>
+        </a>
+        <p>Solar, inverter, home automation, CCTV, and electrical solutions for residential and commercial customers. We offer the best electrical services.</p>
+        <a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="btn btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#solar">Solar Installation</a></li>
+          <li><a href="#inverter">Inverter Installation</a></li>
+          <li><a href="#automation">Home Automation</a></li>
+          <li><a href="#cctv">CCTV Installation</a></li>
+          <li><a href="#services">Other Electrical Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#equipment">Equipment</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Request a Quote</h4>
+        <p>Tell us about your project and receive information about the available options.</p>
+        <a href="#quote" class="btn btn-primary" style="margin-top:.4rem">Request a Quote</a>
+        <p style="margin-top:1.4rem"><strong style="color:#fff;font-size:.85rem">WhatsApp</strong><br><a href="https://wa.me/2348069706274" target="_blank" rel="noopener">08069706274</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> TEKK ACCESS. All rights reserved.</span>
+      <span>We Offer the Best Electrical Services. · <a href="https://wa.me/2348069706274" target="_blank" rel="noopener">WhatsApp: 08069706274</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/2348069706274?text=Hello%20TEKK%20ACCESS%2C%20I%20visited%20your%20website%20and%20would%20like%20to%20enquire%20about%20your%20electrical%20and%20technology%20services." target="_blank" rel="noopener" class="float-wa" aria-label="Chat with TEKK ACCESS on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+</a>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- Year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---------- Header shadow ---------- */
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }, {passive:true});
+
+  /* ---------- Mobile menu ---------- */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+    hamburger.setAttribute('aria-expanded', open);
+    hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded','false');
+      hamburger.setAttribute('aria-label','Open menu');
+    });
+  });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(other => {
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+        other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('visible'));
+  }
+
+  /* ---------- Gallery tabs ---------- */
+  const tabs = document.querySelectorAll('.gallery-tab');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected','true');
+      const cat = tab.dataset.cat;
+      galleryItems.forEach(item => {
+        item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
+      });
+    });
+  });
+
+  /* ---------- Lightbox ---------- */
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, alt){
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    lightboxClose.focus();
+  }
+  function closeLightbox(){
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    lightboxImg.src = '';
+  }
+
+  galleryItems.forEach(item => {
+    const img = item.querySelector('img');
+    item.addEventListener('click', () => openLightbox(img.src, img.alt));
+    item.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        openLightbox(img.src, img.alt);
+      }
+    });
+  });
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if(e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox(); });
+
+  /* ---------- Helpers ---------- */
+  const WA_NUMBER = '2348069706274';
+  function waUrl(message){
+    return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(message);
+  }
+  function showError(input, errEl, show){
+    input.classList.toggle('error', show);
+    if(errEl) errEl.classList.toggle('show', show);
+  }
+  function clearStatus(el){
+    el.classList.remove('show','info','warn');
+    el.textContent = '';
+  }
+  function setStatus(el, msg, type){
+    el.classList.add('show', type || 'info');
+    el.textContent = msg;
+  }
+
+  /* ---------- Quote form ---------- */
+  const quoteForm = document.getElementById('quoteForm');
+  const quoteStatus = document.getElementById('quoteStatus');
+  const qFields = {
+    name: document.getElementById('qName'),
+    phone: document.getElementById('qPhone'),
+    service: document.getElementById('qService'),
+    property: document.getElementById('qProperty'),
+    location: document.getElementById('qLocation'),
+    description: document.getElementById('qDescription')
+  };
+  const qErrors = {
+    name: document.getElementById('qNameErr'),
+    phone: document.getElementById('qPhoneErr'),
+    service: document.getElementById('qServiceErr'),
+    property: document.getElementById('qPropertyErr'),
+    location: document.getElementById('qLocationErr'),
+    description: document.getElementById('qDescriptionErr')
+  };
+
+  Object.keys(qFields).forEach(k => {
+    qFields[k].addEventListener('input', () => showError(qFields[k], qErrors[k], false));
+    qFields[k].addEventListener('change', () => showError(qFields[k], qErrors[k], false));
+  });
+
+  quoteForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    clearStatus(quoteStatus);
+    let valid = true;
+
+    Object.keys(qFields).forEach(k => {
+      const val = qFields[k].value.trim();
+      const bad = !val;
+      showError(qFields[k], qErrors[k], bad);
+      if(bad) valid = false;
+    });
+
+    const p = qFields.phone.value.trim();
+    if(p && !/^[0-9+\-\s()]{7,20}$/.test(p)){
+      showError(qFields.phone, qErrors.phone, true);
+      qErrors.phone.textContent = 'Please enter a valid WhatsApp number.';
+      valid = false;
+    }
+
+    if(!valid){
+      const firstError = quoteForm.querySelector('.error');
+      if(firstError) firstError.focus();
+      setStatus(quoteStatus, 'Please correct the highlighted fields before continuing.', 'warn');
+      return;
+    }
+
+    const name = qFields.name.value.trim();
+    const phone = p;
+    const service = qFields.service.value;
+    const property = qFields.property.value;
+    const location = qFields.location.value.trim();
+    const description = qFields.description.value.trim();
+    const additional = document.getElementById('qAdditional').value.trim();
+
+    let message = 'Hello TEKK ACCESS, I would like to request a quote. ';
+    message += 'My name is ' + name + '. ';
+    message += 'Service required: ' + service + '. ';
+    message += 'Property type: ' + property + '. ';
+    message += 'Location/area: ' + location + '. ';
+    message += 'Project description: ' + description + '. ';
+    if(additional) message += 'Additional requirements: ' + additional + '. ';
+    message += 'My WhatsApp number is ' + phone + '.';
+    message += ' Please contact me with the available options and next steps.';
+
+    setStatus(quoteStatus, 'Opening WhatsApp with your enquiry. Please press Send in WhatsApp to deliver your message to TEKK ACCESS.', 'info');
+    window.open(waUrl(message), '_blank', 'noopener');
+  });
+
+  /* ---------- Contact form ---------- */
+  const contactForm = document.getElementById('contactForm');
+  const contactStatus = document.getElementById('contactStatus');
+  const cName = document.getElementById('cName');
+  const cPhone = document.getElementById('cPhone');
+  const cMessage = document.getElementById('cMessage');
+  const cNameErr = document.getElementById('cNameErr');
+  const cPhoneErr = document.getElementById('cPhoneErr');
+  const cMessageErr = document.getElementById('cMessageErr');
+
+  [cName, cPhone, cMessage].forEach(inp => {
+    inp.addEventListener('input', () => {
+      inp.classList.remove('error');
+      const err = inp.id === 'cName' ? cNameErr : inp.id === 'cPhone' ? cPhoneErr : cMessageErr;
+      if(err) err.classList.remove('show');
+    });
+  });
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    clearStatus(contactStatus);
+    let valid = true;
+
+    if(!cName.value.trim()){ showError(cName, cNameErr, true); valid = false; }
+    const p = cPhone.value.trim();
+    if(!p || !/^[0-9+\-\s()]{7,20}$/.test(p)){ showError(cPhone, cPhoneErr, true); valid = false; }
+    if(!cMessage.value.trim()){ showError(cMessage, cMessageErr, true); valid = false; }
+
+    if(!valid){
+      const firstError = contactForm.querySelector('.error');
+      if(firstError) firstError.focus();
+      setStatus(contactStatus, 'Please correct the highlighted fields before continuing.', 'warn');
+      return;
+    }
+
+    let message = 'Hello TEKK ACCESS, I visited your website and would like to enquire. ';
+    message += 'My name is ' + cName.value.trim() + '. ';
+    message += 'My message: ' + cMessage.value.trim() + '. ';
+    message += 'My WhatsApp number is ' + p + '.';
+
+    setStatus(contactStatus, 'Opening WhatsApp with your message. Please press Send in WhatsApp to deliver your enquiry.', 'info');
+    window.open(waUrl(message), '_blank', 'noopener');
+  });
+
+})();
+</script>
+</body>
+</html>
